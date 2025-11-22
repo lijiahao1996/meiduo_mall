@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -53,8 +53,16 @@ ROOT_URLCONF = "meiduo_mall.urls"
 
 TEMPLATES = [
     {
+        'BACKEND': 'django.template.backends.jinja2.Jinja2',  # 使用 Jinja2
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # 全局模板目录
+        'APP_DIRS': False,
+        'OPTIONS': {
+            'environment': 'utils.jinja2.environment',  # 指定 Jinja2 环境
+        },
+    },
+    {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, 'templates')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -73,9 +81,13 @@ WSGI_APPLICATION = "meiduo_mall.wsgi.application"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',  # 设置为 MySQL
+        'NAME': 'meiduo_mall',          # 您的数据库名称
+        'USER': 'root',               # 您的用户名
+        'PASSWORD': 'Ljh721122',           # 您的密码
+        'HOST': 'localhost',                   # 数据库主机
+        'PORT': '3306',                        # MySQL 的默认端口
     }
 }
 
@@ -114,9 +126,122 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = "static/"
+# ------------ Static Settings -------------
+
+# 静态资源访问前缀，访问静态文件时使用http://127.0.0.1:8000/static/xxx
+STATIC_URL = '/static/'
+
+# 开发环境使用你的 static 目录，告诉 Django 静态文件放在哪里
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+
+# 部署时收集静态文件的目录，这个目录 Django collectstatic 会用（生产环境会用 nginx 指向 static_root 来加载静态文件，现在先不管也没关系，但写上比较规范。）
+STATIC_ROOT = os.path.join(BASE_DIR, "static_root")
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# -------- Redis 缓存配置 --------
+CACHES = {
+    "default": {  # 0 号库
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/0",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "SERIALIZER": "django_redis.serializers.pickle.PickleSerializer",
+        }
+    },
+    "session": {  # 1 号库（专门存 Session）
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+
+# -------- 指定 Session 使用 Redis session --------
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "session"
+
+
+# -------- 日志模块 ----------
+LOG_DIR = os.path.join(BASE_DIR, "logs")
+if not os.path.exists(LOG_DIR):
+    os.makedirs(LOG_DIR)
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+
+    # 日志格式定义
+    "formatters": {
+        "standard": {
+            "format": "[%(asctime)s] [%(levelname)s] [%(name)s:%(lineno)d] %(message)s"
+        },
+        "simple": {
+            "format": "[%(levelname)s] %(message)s"
+        }
+    },
+
+    # Handlers：日志输出到哪里
+    "handlers": {
+        # 写入 debug/info/warning 日志
+        "default": {
+            "level": "INFO",
+            "class": "logging.handlers.TimedRotatingFileHandler",
+            "filename": os.path.join(LOG_DIR, "django.log"),
+            "when": "midnight",
+            "backupCount": 10,
+            "encoding": "utf-8",
+            "formatter": "standard",
+        },
+
+        # 写入 error 日志
+        "error": {
+            "level": "ERROR",
+            "class": "logging.handlers.TimedRotatingFileHandler",
+            "filename": os.path.join(LOG_DIR, "error.log"),
+            "when": "midnight",
+            "backupCount": 10,
+            "encoding": "utf-8",
+            "formatter": "standard",
+        },
+
+        # 控制台输出（开发环境）
+        "console": {
+            "level": "DEBUG",
+            "class": "logging.StreamHandler",
+            "formatter": "simple"
+        },
+    },
+
+    # 具体 logger 设置
+    "loggers": {
+        # 默认 Django 日志
+        "django": {
+            "handlers": ["default", "console"],
+            "level": "INFO",
+            "propagate": True
+        },
+
+        # 专门记录错误
+        "django.request": {
+            "handlers": ["error"],
+            "level": "ERROR",
+            "propagate": False,
+        },
+
+        # 你的项目 logger
+        "meiduo": {
+            "handlers": ["default", "console"],
+            "level": "DEBUG",
+            "propagate": True
+        }
+    }
+}

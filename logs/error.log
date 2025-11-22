@@ -1,0 +1,13 @@
+[2025-11-22 14:03:39,238] [ERROR] [django.request:253] Internal Server Error: /test_error/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py", line 23, in test_error
+    a = 1 / 0  # 故意制造 ZeroDivisionError
+        ~~^~~
+ZeroDivisionError: division by zero
+[2025-11-22 14:15:19,670] [ERROR] [meiduo:28] 测试一下错误日志

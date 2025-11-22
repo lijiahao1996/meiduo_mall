@@ -17,7 +17,29 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from django.shortcuts import render
+
+
+
+import logging
+logger = logging.getLogger("meiduo")
+def index(request):
+
+    return render(request, "index.html", {"name": "TestName"})
+
+
+from django.core.cache import cache
+from django.http import HttpResponse
+
+def test_redis(request):
+    cache.set("name", "zhangsan", 30)  # 设置 30 秒缓存
+    value = cache.get("name")
+    return HttpResponse(f"Redis OK: {value}")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("", index, name="index"),
+    path("test_redis/", test_redis),
 ]
+
+
