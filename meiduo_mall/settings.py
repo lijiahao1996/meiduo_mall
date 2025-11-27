@@ -12,6 +12,11 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 import os
 from pathlib import Path
 
+
+# "应用名.模型名"
+AUTH_USER_MODEL = "users.User"
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,7 +30,12 @@ SECRET_KEY = "django-insecure-dhlx2z7fa*jj_#6y3oa$sia==$1nj9s4930fed8)_kz)b18)!*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "www.meiduo.site",
+    "meiduo.site",
+]
 
 
 # Application definition
@@ -37,6 +47,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'apps.users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -58,6 +69,11 @@ TEMPLATES = [
         'APP_DIRS': False,
         'OPTIONS': {
             'environment': 'utils.jinja2.environment',  # 指定 Jinja2 环境
+            'context_processors': [
+                "django.template.context_processors.request",  # 注入 request
+                "django.contrib.auth.context_processors.auth",  # 注入 user
+                "django.contrib.messages.context_processors.messages",  # 注入 messages
+            ]
         },
     },
     {
@@ -162,7 +178,16 @@ CACHES = {
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
-    }
+    },
+
+    "verify_codes": {  # 2 号库（验证码专用）
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+
 }
 
 # -------- 指定 Session 使用 Redis session --------
@@ -245,3 +270,4 @@ LOGGING = {
         }
     }
 }
+

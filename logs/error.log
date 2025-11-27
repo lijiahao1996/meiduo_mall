@@ -1,4 +1,4 @@
-[2025-11-22 14:03:39,238] [ERROR] [django.request:253] Internal Server Error: /test_error/
+[2025-11-27 02:03:41,340] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/25773397-15a0-4393-9859-5c0e4ce4764c/
 Traceback (most recent call last):
   File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
@@ -6,8 +6,1633 @@ Traceback (most recent call last):
   File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py", line 23, in test_error
-    a = 1 / 0  # 故意制造 ZeroDivisionError
-        ~~^~~
-ZeroDivisionError: division by zero
-[2025-11-22 14:15:19,670] [ERROR] [meiduo:28] 测试一下错误日志
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:03:42,171] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/80653bc6-cfa5-411c-a6c4-723f301a31cf/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:03:42,667] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/a104ec59-1e9a-41ec-8d3e-16b07d6f445a/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:03:43,283] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/9508013a-f145-481e-9316-466577366f45/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:03:43,716] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/f9407615-6968-47b6-8e9a-446ea06894c2/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:03:43,888] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/bca28a02-22fb-412a-981c-943f17d1a45f/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:03:44,049] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/6a6a3356-98e3-4e85-8fa1-58498c8e1ada/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:03:44,207] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/9d42e5d2-23c8-4337-a3b8-c39abb2a1c6e/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:03:44,639] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/bee01c7c-aab4-4ba6-add5-271fef47d8e6/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:07:27,975] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/da3986ba-77de-4747-9c83-39af2a6b8ae2/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:07:28,637] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/ad4245dd-a957-4c89-96bc-713ff94df661/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:07:29,083] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/f21d9103-fbdd-4916-9eb5-fe01a7663467/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:07:29,251] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/2a191266-84d8-4f76-8b41-9733f58b03ce/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:07:29,596] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/7148ba41-0022-48ae-bef0-fb1373d8e45b/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:08:36,496] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/ad4245dd-a957-4c89-96bc-713ff94df661/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    text, image = captcha.generate_captcha()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:27:57,135] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/893caa27-1622-4f91-aa1f-6e177258cf60/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:28:00,070] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/e1a30c4b-6a4e-40e8-9377-697c461820e5/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:28:00,343] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/6fd3ff06-97c5-4492-97e7-a360927c8e86/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:28:00,604] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/1514b23f-b055-4be4-9557-a49decc93029/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:28:00,771] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/43f4be1f-3b73-4d69-8726-641ac4b4f7b1/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:28:00,939] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/6f4230da-b683-4063-adbe-67b1efbcbdd1/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:31:17,968] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/892f0590-1d23-4155-aca0-7d23fdd64ff3/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:31:19,565] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/a1a20cc6-eb30-4a08-ac38-bb1d35c1e87a/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:31:20,418] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/8dfb5fe4-23e6-4d01-a996-6b0d568ca94b/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:31:20,964] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/bf6e1370-d83a-448c-9c9a-41c1df7d09a1/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:31:21,504] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/0762c4a1-2039-4e1a-9fae-c2a442ef37a8/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:31:21,651] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/f37ff327-b9fb-4f80-bc30-0359cd58df6c/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:31:21,810] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/73dbe30c-4ee6-4907-97ac-9c6b201510d1/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:31:21,979] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/c2f76a76-50f0-4076-b87a-41fdb364bb3d/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:31:22,136] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/703a4e26-3504-4075-9d8f-397898a2c6d1/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:31:22,307] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/3eeea33f-8a1a-422a-8266-b6838bf3f7f8/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:31:22,635] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/2769aa83-4049-40ee-b5c9-577f0d24b7c3/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:33:29,421] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/4bbedd7f-537b-446e-afc6-1bfee4bcb9eb/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:33:31,519] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/3361603c-3e1e-48cc-9fbe-0602668ce079/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:33:32,029] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/8095647c-e39a-425f-8abc-6642c44e88ed/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:33:32,180] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/7e56edc3-a287-46ad-bc25-8e4edf144588/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:33:32,331] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/6e1b2aec-a40f-4327-bf1e-dfca2dabdb07/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:33:44,229] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/2b7b85e9-29fb-47d3-aeaa-c7b0c3946982/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:35:09,900] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/2b7b85e9-29fb-47d3-aeaa-c7b0c3946982/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-27 02:40:19,433] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/3ab73281-a056-4b03-b3aa-a8dde371a865/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:40:20,053] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/cd8316ee-6c29-4eca-9257-179ff5f1a88a/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:40:21,051] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/858827cf-1e6e-4415-8f27-561e3238c81d/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:40:21,563] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/f3ef48f3-a5ac-42e0-b857-e3fd7ada10d4/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:40:21,983] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/8cba0cb6-c2bf-4e26-9bb0-076c84842859/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:40:22,138] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/af9e6565-ad55-454d-988a-62af37fd5206/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:40:22,287] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/e6472794-6870-4af6-b17b-9d94e591a245/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:40:22,455] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/8b0edbd1-e863-46a2-84c7-d80fc1cb78d4/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:47:48,533] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/be1f4fbe-0169-4963-8fe1-2aeb8e5f1552/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:47:49,078] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/c5a76f8d-b979-42da-80c2-13401ba4cd3f/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:47:50,035] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/d5d326b1-e27b-4ce8-9e80-0ba68d3b29d8/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:47:50,187] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/63a9103f-efd0-4115-abe5-a81c5c560878/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:47:51,537] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/af16ebc5-f125-4380-8c49-3a3b3254c7ff/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:47:51,658] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/70e85192-7983-4d2b-a45d-9add96757be2/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:47:51,865] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/8ee9aaa5-5985-4e0e-9cf2-e3a7c51b9ed6/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:47:52,037] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/8a6cd100-17bd-43d9-88a0-8546cc56742c/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:47:52,195] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/42ffecfc-c280-41b9-abd6-6d71074ea720/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:47:52,371] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/f77702ac-e01e-4ac5-9794-67e66597a5f5/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:47:52,836] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/52bd07be-9103-4fd3-b703-bb439b83d0da/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:47:52,986] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/be1d57fa-937a-431d-8bef-4a858eda2dfd/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:47:53,121] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/0d93342b-1d5a-4a2d-b48b-092e2f326ff8/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:52:05,823] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/2b7b85e9-29fb-47d3-aeaa-c7b0c3946982/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:52:06,602] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/2b7b85e9-29fb-47d3-aeaa-c7b0c3946982/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:52:14,718] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/f8fa9c90-ff4d-4bf6-b904-7acd0865ce36/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:52:15,837] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/26cf229f-d46c-4b06-a530-0d61b77bdcf0/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:52:19,212] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/9952359c-7914-46a7-82b6-ab9faa50eea0/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:52:19,421] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/7aae6e46-ae17-4631-8c44-113ba9a26e4a/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:52:19,590] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/594d8951-cd00-40ef-bdff-ca85b25a1c5a/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 02:52:29,243] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/594d8951-cd00-40ef-bdff-ca85b25a1c5a/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 218, in generate_captcha
+    return self.captcha("")
+           ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 204, in captcha
+    image = self.text(image, self.fonts, drawings=['warp', 'rotate', 'offset'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/captcha/captcha.py", line 132, in text
+    c_width, c_height = draw.textsize(c, font=font)
+                        ^^^^^^^^^^^^^
+AttributeError: 'ImageDraw' object has no attribute 'textsize'
+[2025-11-27 09:16:49,045] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/37b061bc-15b5-470a-a4bc-f3d369486ec5/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+    ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)
+[2025-11-27 09:16:50,738] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/7d48dc15-9d31-49ab-89a9-127f776208a2/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+    ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)
+[2025-11-27 09:16:51,344] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/f8db3fc5-ce58-4b5d-a190-d851111c488f/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+    ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)
+[2025-11-27 09:16:51,696] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/7d7a9802-73e5-4365-87fa-a19de544f3e7/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+    ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)
+[2025-11-27 09:16:51,854] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/6920cc63-0bc7-42dd-9bdf-41654a6ddd13/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 148, in get
+    name, text, image_data = captcha.generate_captcha()
+    ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)

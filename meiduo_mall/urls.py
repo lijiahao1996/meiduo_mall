@@ -16,7 +16,7 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.shortcuts import render
 
 
@@ -38,8 +38,10 @@ def test_redis(request):
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", index, name="index"),
-    path("test_redis/", test_redis),
+    # path("", index, name="index"),
+    # path("test_redis/", test_redis),
+    path("users/", include(("apps.users.urls", "users"), namespace="users")),
+    path("", include(("apps.contents.urls", "contents"), namespace="contents")),
 ]
 
 
