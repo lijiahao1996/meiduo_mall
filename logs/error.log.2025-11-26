@@ -1,0 +1,210 @@
+[2025-11-26 08:58:04,906] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/b6017de0-6078-4321-85f5-08108e436cd7/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-26 08:58:05,648] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/aa3acbab-8cba-4293-ba13-283111fb547d/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-26 08:58:06,086] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/530c19d6-91d5-4786-8202-258024526abe/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-26 08:58:06,259] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/d23a544e-d391-416a-b4d7-3d17bef47cf0/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-26 08:58:06,706] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/ee48cd5e-3cdf-459e-a7c3-37284de4e8c1/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-26 08:58:42,087] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/73542104-b58d-4b57-98f7-063d5e6122e8/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-26 08:58:43,288] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/9e183bdb-5056-4d09-99b0-8f4d827c83f6/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-26 08:58:43,754] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/750bb290-bffd-455d-8b53-9239947392d4/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-26 08:58:43,903] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/2a3e9ee7-f698-4af9-b55f-d0f0e4aadceb/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-26 08:58:44,392] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/cb28edff-eb6a-4f77-b33a-ad2fe33f9542/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-26 08:58:44,558] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/d71dc2bd-9cc6-493e-9607-98567690afa1/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-26 08:58:44,726] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/fb28569d-1af2-41ea-b6dd-6cd25d09095f/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-26 08:58:44,894] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/6b976d82-16be-4207-ad24-2a079b50148a/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'
+[2025-11-26 08:58:45,070] [ERROR] [django.request:253] Internal Server Error: /users/image_codes/4900d4cf-d707-4487-a0ef-508bb732552d/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageCodeView.get() got an unexpected keyword argument 'image_code_id'

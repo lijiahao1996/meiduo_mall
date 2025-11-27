@@ -1,0 +1,613 @@
+[2025-11-24 06:41:31,907] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 06:41:32,084] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 06:41:32,090] [WARNING] [django.server:213] "GET /image_codes/4278ccd9-0b19-431a-b28f-a2a135ad9e6b/ HTTP/1.1" 400 72009
+[2025-11-24 06:48:08,837] [WARNING] [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 2784
+[2025-11-24 06:48:08,892] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1862
+[2025-11-24 06:49:12,463] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6253
+[2025-11-24 06:49:12,536] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 06:49:12,537] [WARNING] [django.server:213] "GET /image_codes/d129ed79-24ac-42ed-8260-1948ed1b61b9/ HTTP/1.1" 400 72009
+[2025-11-24 06:52:55,642] [WARNING] [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 2784
+[2025-11-24 06:52:55,650] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1862
+[2025-11-24 06:53:09,937] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 06:53:09,993] [WARNING] [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 2784
+[2025-11-24 06:53:10,098] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1862
+[2025-11-24 06:53:10,130] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 06:53:10,131] [WARNING] [django.server:213] "GET /image_codes/3f5161b1-fdcb-49c5-9f8b-370fb0d36985/ HTTP/1.1" 400 72045
+[2025-11-24 07:05:27,075] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-24 07:05:28,115] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 07:05:54,507] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 07:05:54,634] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1862
+[2025-11-24 07:05:54,652] [WARNING] [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 2784
+[2025-11-24 07:05:54,723] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:05:54,753] [WARNING] [django.server:213] "GET /image_codes/f00f1850-78bc-40ce-86ad-22e182db00d7/ HTTP/1.1" 400 72045
+[2025-11-24 07:07:24,940] [WARNING] [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 2784
+[2025-11-24 07:07:24,941] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1862
+[2025-11-24 07:08:21,244] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 07:13:58,457] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-24 07:13:59,022] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 07:14:02,566] [ERROR] [django.server:213] "GET /users/register/ HTTP/1.1" 500 70094
+[2025-11-24 07:14:03,173] [ERROR] [django.server:213] "GET /users/register/ HTTP/1.1" 500 70094
+[2025-11-24 07:14:05,583] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-24 07:14:06,337] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 07:14:06,631] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 07:14:06,749] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:14:06,751] [WARNING] [django.server:213] "GET /image_codes/069af3ef-56f8-413a-b399-f5f2e85a6aa1/ HTTP/1.1" 400 72009
+[2025-11-24 07:14:06,884] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 07:14:06,957] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:14:06,958] [WARNING] [django.server:213] "GET /image_codes/8ddc4cd2-64cd-48c1-ad1c-1101c71b2195/ HTTP/1.1" 400 72009
+[2025-11-24 07:14:07,282] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 07:14:07,326] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:14:07,327] [WARNING] [django.server:213] "GET /image_codes/39c82c86-9657-4993-a6b0-dc1db797df37/ HTTP/1.1" 400 72009
+[2025-11-24 07:14:07,451] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 07:14:07,494] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:14:07,496] [WARNING] [django.server:213] "GET /image_codes/19aa0474-f85c-4ad2-9fc8-f232a35f2f2c/ HTTP/1.1" 400 72009
+[2025-11-24 07:15:49,653] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:15:49,654] [WARNING] [django.server:213] "GET /image_codes/eba1a411-557d-4075-9800-a2557751570a/ HTTP/1.1" 400 72009
+[2025-11-24 07:15:50,141] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:15:50,142] [WARNING] [django.server:213] "GET /image_codes/74297c0b-2583-4729-a077-993521e9f4e0/ HTTP/1.1" 400 72009
+[2025-11-24 07:15:50,322] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:15:50,323] [WARNING] [django.server:213] "GET /image_codes/8f04497d-bd5b-4b29-8f73-52aaa1d575e5/ HTTP/1.1" 400 72009
+[2025-11-24 07:23:07,663] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:23:07,664] [WARNING] [django.server:213] "GET /users/register/ HTTP/1.1" 400 71954
+[2025-11-24 07:23:07,912] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:23:07,913] [WARNING] [django.server:213] "GET /favicon.ico HTTP/1.1" 400 71756
+[2025-11-24 07:27:48,573] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:27:48,582] [WARNING] [django.server:213] "GET /users/register/ HTTP/1.1" 400 71954
+[2025-11-24 07:27:48,666] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:27:48,681] [WARNING] [django.server:213] "GET /favicon.ico HTTP/1.1" 400 71756
+[2025-11-24 07:27:55,988] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 07:27:56,113] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:27:56,114] [WARNING] [django.server:213] "GET /image_codes/c65ac441-4dc7-4bb5-a011-b39c6f3ec0dd/ HTTP/1.1" 400 72009
+[2025-11-24 07:28:02,417] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:28:02,418] [WARNING] [django.server:213] "GET /image_codes/0777b4a2-40e8-4c75-bf51-28a6bf2af9fe/ HTTP/1.1" 400 72009
+[2025-11-24 07:28:02,910] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:28:02,911] [WARNING] [django.server:213] "GET /image_codes/582c97ce-7249-4efa-a1a4-76d61e877f1e/ HTTP/1.1" 400 72009
+[2025-11-24 07:40:47,679] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:40:47,680] [WARNING] [django.server:213] "GET /image_codes/87349fae-5b9e-43c5-9225-9933c5ae2c21/ HTTP/1.1" 400 72009
+[2025-11-24 07:40:58,918] [WARNING] [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 2784
+[2025-11-24 07:40:58,957] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1862
+[2025-11-24 07:41:30,178] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:41:30,179] [WARNING] [django.server:213] "GET /users/register/ HTTP/1.1" 400 71990
+[2025-11-24 07:41:30,475] [ERROR] [django.security.DisallowedHost:253] Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+[2025-11-24 07:41:30,476] [WARNING] [django.server:213] "GET /favicon.ico HTTP/1.1" 400 71792
+[2025-11-24 07:44:02,414] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+[2025-11-24 07:44:02,904] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 07:44:04,838] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 07:44:04,871] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-24 07:44:04,874] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-24 07:44:04,938] [WARNING] [django.server:213] "GET /image_codes/9ba3e348-14c3-48ff-90b1-ba9e295e27d3/ HTTP/1.1" 404 2793
+[2025-11-24 07:44:04,954] [WARNING] [django.server:213] "GET /favicon.ico HTTP/1.1" 404 2679
+[2025-11-24 07:44:16,475] [WARNING] [django.server:213] "GET /users/login/ HTTP/1.1" 404 2798
+[2025-11-24 07:44:44,882] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 07:45:00,177] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 07:45:00,284] [WARNING] [django.server:213] "GET /image_codes/09500978-9512-4c9d-80d4-811fee66e90b/ HTTP/1.1" 404 2793
+[2025-11-24 07:45:00,343] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 07:45:59,879] [WARNING] [django.server:213] "GET /image_codes/09500978-9512-4c9d-80d4-811fee66e90b/ HTTP/1.1" 404 2793
+[2025-11-24 07:46:06,840] [WARNING] [django.server:213] "GET /image_codes/09500978-9512-4c9d-80d4-811fee66e90b/ HTTP/1.1" 404 2793
+[2025-11-24 07:57:48,859] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 07:57:48,909] [WARNING] [django.server:213] "GET /image_codes/c7fc177c-42e4-41d3-b849-ad5de1970347/ HTTP/1.1" 404 2793
+[2025-11-24 07:58:44,051] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 07:58:44,083] [WARNING] [django.server:213] "GET /image_codes/ebc9dde9-a8b5-4528-a874-d52632e9f6e2/ HTTP/1.1" 404 2793
+[2025-11-24 08:08:15,168] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 08:19:34,452] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 08:19:34,503] [WARNING] [django.server:213] "GET /image_codes/3b0b483f-08ac-423e-b9ac-6ce9181aa35d/ HTTP/1.1" 404 2793
+[2025-11-24 08:19:38,752] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 08:23:04,418] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 08:23:04,543] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 08:23:04,550] [WARNING] [django.server:213] "GET /image_codes/a7aec50b-55c2-42f5-8718-40e2d7f499f5/ HTTP/1.1" 404 2793
+[2025-11-24 08:23:36,202] [WARNING] [django.server:213] "GET /image_codes/ee500449-f0b1-4b0b-be72-c225628cedca/ HTTP/1.1" 404 2793
+[2025-11-24 08:23:36,663] [WARNING] [django.server:213] "GET /image_codes/e790953e-0b76-4efa-91a8-9e4183ab1413/ HTTP/1.1" 404 2793
+[2025-11-24 08:23:37,804] [WARNING] [django.server:213] "GET /image_codes/1a7721cc-572c-4a37-826e-141af0c95246/ HTTP/1.1" 404 2793
+[2025-11-24 08:23:38,589] [WARNING] [django.server:213] "GET /image_codes/18b5e171-dcff-4eea-875f-f095213da997/ HTTP/1.1" 404 2793
+[2025-11-24 08:23:39,318] [WARNING] [django.server:213] "GET /image_codes/a80a0568-fd9e-496e-a5ba-be9ade9775bb/ HTTP/1.1" 404 2793
+[2025-11-24 08:27:23,203] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 08:27:23,266] [WARNING] [django.server:213] "GET /image_codes/eb992e38-399c-4542-80a4-e00664bd8fb3/ HTTP/1.1" 404 2793
+[2025-11-24 08:27:24,322] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 08:27:24,357] [WARNING] [django.server:213] "GET /image_codes/edd9ff17-58df-4f6d-bcc7-cb30d06aafd3/ HTTP/1.1" 404 2793
+[2025-11-24 08:27:25,339] [WARNING] [django.server:213] "GET /image_codes/a1584d6e-1c87-4771-8403-75fb6778acce/ HTTP/1.1" 404 2793
+[2025-11-24 08:33:11,085] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6400
+[2025-11-24 08:33:12,935] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6400
+[2025-11-24 08:33:13,431] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6400
+[2025-11-24 08:33:13,607] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6400
+[2025-11-24 08:33:20,524] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 08:33:20,555] [WARNING] [django.server:213] "GET /image_codes/56c7aa2b-4782-4506-a11c-a134db61f75c/ HTTP/1.1" 404 2793
+[2025-11-24 08:33:44,730] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6400
+[2025-11-24 08:33:45,719] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6400
+[2025-11-24 08:33:51,963] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 08:33:51,992] [WARNING] [django.server:213] "GET /image_codes/f29ebbbb-42c9-427c-aaf3-8b9b3c5e7a58/ HTTP/1.1" 404 2793
+[2025-11-24 08:34:36,237] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6495
+[2025-11-24 08:34:36,251] [WARNING] [django.server:213] "GET /users/register/images/pic_code.jpg HTTP/1.1" 404 2864
+[2025-11-24 08:34:42,848] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 08:34:42,875] [WARNING] [django.server:213] "GET /image_codes/75dedc63-d2dc-4f23-9fa1-264554c3e54c/ HTTP/1.1" 404 2793
+[2025-11-24 08:57:13,200] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 08:57:13,236] [WARNING] [django.server:213] "GET /image_codes/fb5d6e56-162f-4d0a-b39e-728fee55fa45/ HTTP/1.1" 404 2793
+[2025-11-24 08:57:40,968] [WARNING] [django.server:213] "GET /image_codes/a728a603-42f9-48bc-a320-b0742ef6bade/ HTTP/1.1" 404 2793
+[2025-11-24 08:59:53,845] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 5001
+[2025-11-24 09:00:21,985] [WARNING] [django.server:213] "GET /users/login/ HTTP/1.1" 404 2798
+[2025-11-24 09:01:59,959] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 09:01:59,994] [WARNING] [django.server:213] "GET /image_codes/5751a09d-a354-4d51-94c2-c727dea8a700/ HTTP/1.1" 404 2793
+[2025-11-24 09:02:05,113] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 09:03:00,753] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 09:03:00,880] [WARNING] [django.server:213] "GET /image_codes/6072fd33-829e-48ea-ac1a-7994080fdb53/ HTTP/1.1" 404 2793
+[2025-11-24 09:03:00,889] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 09:03:22,793] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 09:03:22,828] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-24 09:03:22,836] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-24 09:03:22,857] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-24 09:03:22,859] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-24 09:03:22,861] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-24 09:03:22,866] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-24 09:03:22,899] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-24 09:03:22,904] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 7675
+[2025-11-24 09:03:22,937] [INFO] [django.server:213] "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+[2025-11-24 09:03:22,938] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-24 09:03:22,951] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 09:03:22,953] [INFO] [django.server:213] "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+[2025-11-24 09:03:22,953] [INFO] [django.server:213] "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+[2025-11-24 09:03:23,764] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 09:03:23,836] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-24 09:03:23,844] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-24 09:03:23,858] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-24 09:03:23,861] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-24 09:03:23,862] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-24 09:03:23,865] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-24 09:03:23,877] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-24 09:03:23,881] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 7675
+[2025-11-24 09:03:23,895] [INFO] [django.server:213] "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+[2025-11-24 09:03:23,902] [INFO] [django.server:213] "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+[2025-11-24 09:03:23,903] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-24 09:03:23,918] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 09:03:23,927] [INFO] [django.server:213] "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+[2025-11-24 09:03:24,426] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 09:03:24,454] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-24 09:03:24,462] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-24 09:03:24,516] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-24 09:03:24,520] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-24 09:03:24,528] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-24 09:03:24,528] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-24 09:03:24,530] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-24 09:03:24,553] [INFO] [django.server:213] "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+[2025-11-24 09:03:24,564] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-24 09:03:24,566] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 7675
+[2025-11-24 09:03:24,570] [INFO] [django.server:213] "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+[2025-11-24 09:03:24,586] [INFO] [django.server:213] "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+[2025-11-24 09:03:24,611] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 09:04:07,011] [INFO] [django.server:213] code 400, message Bad request version ('\x9bÉÛ\x1bÝq3{Ú\x97p§:ðH\x00')
+[2025-11-24 09:04:07,011] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-24 09:04:07,016] [INFO] [django.server:213] code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06KÊÊ\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00')
+[2025-11-24 09:04:07,017] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-24 09:04:11,221] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 09:04:11,243] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-24 09:04:11,252] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-24 09:04:11,265] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-24 09:04:11,265] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-24 09:04:11,268] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-24 09:04:11,274] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 7675
+[2025-11-24 09:04:11,278] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-24 09:04:11,278] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-24 09:04:11,319] [INFO] [django.server:213] "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+[2025-11-24 09:04:11,321] [INFO] [django.server:213] "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+[2025-11-24 09:04:11,321] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-24 09:04:11,322] [INFO] [django.server:213] "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+[2025-11-24 09:04:11,374] [WARNING] [django.server:213] "GET /favicon.ico HTTP/1.1" 404 2679
+[2025-11-24 09:04:24,534] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 09:05:00,272] [WARNING] [django.server:213] "GET /sms_codes/13935174819/?image_code=1&image_code_id=75151208-7d40-402a-b561-57f1a7e75826 HTTP/1.1" 404 2780
+[2025-11-24 09:05:18,800] [WARNING] [django.server:213] "POST /users/register/ HTTP/1.1" 400 21
+[2025-11-24 09:05:23,927] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 09:05:24,045] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 304 0
+[2025-11-24 09:05:24,117] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 09:05:56,324] [WARNING] [django.server:213] "POST /users/register/ HTTP/1.1" 400 21
+[2025-11-24 16:17:05,232] [WARNING] [django.server:213] "POST /users/register/ HTTP/1.1" 400 21
+[2025-11-24 16:17:21,047] [WARNING] [django.server:213] "GET /image_codes/665132d7-8533-4192-ad30-b86ee7a9a84d/ HTTP/1.1" 404 2793
+[2025-11-24 16:17:26,354] [WARNING] [django.server:213] "GET /image_codes/bc833344-4373-4dca-85bc-ca9405bccb8a/ HTTP/1.1" 404 2793
+[2025-11-24 16:26:18,708] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 16:26:48,429] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 16:27:28,654] [INFO] [django.server:213] code 400, message Bad request version ('N\xadL)Ln\x802ó>´è')
+[2025-11-24 16:27:28,654] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-24 16:27:28,662] [INFO] [django.server:213] code 400, message Bad request version ('¥')
+[2025-11-24 16:27:28,662] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-24 16:27:30,504] [WARNING] [django.server:213] "GET /register HTTP/1.1" 404 2670
+[2025-11-24 16:27:30,582] [WARNING] [django.server:213] "GET /favicon.ico HTTP/1.1" 404 2679
+[2025-11-24 16:28:15,797] [INFO] [django.server:213] "GET /users/register HTTP/1.1" 301 0
+[2025-11-24 16:28:15,813] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6395
+[2025-11-24 16:28:15,848] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-24 16:28:15,868] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-24 16:28:15,870] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-24 16:28:15,874] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-24 16:28:15,875] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-24 16:28:15,881] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-24 16:28:15,896] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-24 16:28:15,898] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 7675
+[2025-11-24 16:28:15,945] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-24 16:28:15,946] [INFO] [django.server:213] "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+[2025-11-24 16:28:15,947] [INFO] [django.server:213] "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+[2025-11-24 16:28:15,949] [INFO] [django.server:213] "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+[2025-11-24 16:29:23,163] [WARNING] [django.server:213] "POST /users/register/ HTTP/1.1" 400 21
+[2025-11-24 16:39:27,985] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 16:39:45,955] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-24 16:39:46,016] [ERROR] [django.server:213] "GET / HTTP/1.1" 500 108655
+[2025-11-24 16:42:59,851] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/urls.py changed, reloading.
+[2025-11-24 16:43:00,540] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 16:43:38,274] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/urls.py changed, reloading.
+[2025-11-24 16:43:38,797] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 16:43:39,157] [INFO] [django.server:213] "GET / HTTP/1.1" 200 201
+[2025-11-24 16:43:44,138] [WARNING] [django.security.csrf:253] Forbidden (CSRF token from POST incorrect.): /users/register/
+[2025-11-24 16:43:44,139] [WARNING] [django.server:213] "POST /users/register/ HTTP/1.1" 403 2503
+[2025-11-24 16:54:01,266] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/utils/jinja2.py changed, reloading.
+[2025-11-24 16:54:01,761] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 16:54:53,829] [WARNING] [django.security.csrf:253] Forbidden (CSRF token from POST incorrect.): /users/register/
+[2025-11-24 16:54:53,830] [WARNING] [django.server:213] "POST /users/register/ HTTP/1.1" 403 2503
+[2025-11-24 16:54:55,195] [ERROR] [django.server:213] "GET /users/register/ HTTP/1.1" 500 107060
+[2025-11-24 16:55:06,122] [ERROR] [django.server:213] "GET /users/register/ HTTP/1.1" 500 107060
+[2025-11-24 16:59:01,612] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+[2025-11-24 16:59:02,041] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 16:59:40,991] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+[2025-11-24 16:59:41,432] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:01:11,250] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/utils/jinja2.py changed, reloading.
+[2025-11-24 17:01:11,823] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:01:16,200] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/utils/jinja2.py changed, reloading.
+[2025-11-24 17:01:16,716] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:01:33,754] [ERROR] [django.server:213] "GET /users/register/ HTTP/1.1" 500 109997
+[2025-11-24 17:01:37,927] [ERROR] [django.server:213] "GET /users/register/ HTTP/1.1" 500 109997
+[2025-11-24 17:03:44,814] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/utils/jinja2.py changed, reloading.
+[2025-11-24 17:03:45,410] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:04:11,231] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-24 17:04:11,696] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:04:31,484] [ERROR] [django.server:213] "GET /users/register/ HTTP/1.1" 500 112229
+[2025-11-24 17:04:36,239] [ERROR] [django.server:213] "GET /users/register/ HTTP/1.1" 500 112229
+[2025-11-24 17:04:50,745] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-24 17:04:51,150] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:05:41,953] [WARNING] [django.server:213] "GET /register HTTP/1.1" 404 2670
+[2025-11-24 17:05:49,089] [ERROR] [django.server:213] "GET /users/register/ HTTP/1.1" 500 110375
+[2025-11-24 17:11:06,334] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/utils/jinja2.py changed, reloading.
+[2025-11-24 17:11:06,838] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:12:18,910] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:12:44,674] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 17:12:46,784] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-24 17:12:46,794] [INFO] [django.server:213] "GET / HTTP/1.1" 200 201
+[2025-11-24 17:13:02,843] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 17:13:13,818] [WARNING] [django.security.csrf:253] Forbidden (CSRF token from POST incorrect.): /users/register/
+[2025-11-24 17:13:13,818] [WARNING] [django.server:213] "POST /users/register/ HTTP/1.1" 403 2503
+[2025-11-24 17:13:18,345] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:13:18,484] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-24 17:14:50,062] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-24 17:14:50,071] [INFO] [django.server:213] "GET / HTTP/1.1" 200 201
+[2025-11-24 17:19:53,804] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+[2025-11-24 17:19:54,392] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:19:55,674] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:19:55,697] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 304 0
+[2025-11-24 17:19:56,561] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:19:57,654] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:19:58,952] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:20:02,775] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:20:23,780] [WARNING] [django.server:213] "POST /users/register/ HTTP/1.1" 400 18
+[2025-11-24 17:20:45,812] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-24 17:20:45,821] [INFO] [django.server:213] "GET / HTTP/1.1" 200 201
+[2025-11-24 17:22:45,897] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+[2025-11-24 17:22:46,422] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:23:40,001] [ERROR] [django.server:213] "GET /users/info/ HTTP/1.1" 500 97083
+[2025-11-24 17:23:45,181] [ERROR] [django.server:213] "GET /users/info/ HTTP/1.1" 500 97083
+[2025-11-24 17:23:47,739] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:23:47,785] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 304 0
+[2025-11-24 17:24:12,153] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-24 17:24:12,162] [INFO] [django.server:213] "GET / HTTP/1.1" 200 201
+[2025-11-24 17:24:30,699] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+[2025-11-24 17:24:31,150] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:24:40,247] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:25:02,038] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-24 17:25:02,047] [INFO] [django.server:213] "GET / HTTP/1.1" 200 201
+[2025-11-24 17:25:18,399] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+[2025-11-24 17:25:18,867] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:28:40,035] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/utils/jinja2.py changed, reloading.
+[2025-11-24 17:28:40,538] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:29:51,887] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:29:58,369] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:30:03,379] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/utils/jinja2.py changed, reloading.
+[2025-11-24 17:30:03,856] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:30:10,465] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:32:04,483] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:32:31,743] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:35:38,905] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:36:20,932] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:36:24,184] [INFO] [django.server:213] "GET / HTTP/1.1" 200 201
+[2025-11-24 17:36:24,861] [WARNING] [django.server:213] "GET /favicon.ico HTTP/1.1" 404 2673
+[2025-11-24 17:36:31,038] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:39:47,460] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:41:07,209] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-24 17:41:07,221] [INFO] [django.server:213] "GET / HTTP/1.1" 200 201
+[2025-11-24 17:41:10,687] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:54:05,467] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/utils/jinja2.py changed, reloading.
+[2025-11-24 17:54:06,030] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:54:29,310] [ERROR] [django.server:213] "GET /users/register/ HTTP/1.1" 500 113732
+[2025-11-24 17:55:11,715] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:55:12,126] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:55:13,324] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:55:13,835] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:55:14,332] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:55:14,501] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:55:14,675] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:55:23,524] [ERROR] [django.server:213] "GET /users/register/ HTTP/1.1" 500 113760
+[2025-11-24 17:56:06,718] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/utils/jinja2.py changed, reloading.
+[2025-11-24 17:56:07,292] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:56:07,540] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:58:28,259] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/utils/jinja2.py changed, reloading.
+[2025-11-24 17:58:28,704] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:58:30,443] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:58:31,000] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:58:31,381] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-24 17:58:52,598] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/utils/jinja2.py changed, reloading.
+[2025-11-24 17:58:53,142] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-24 17:59:05,722] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559

@@ -1,0 +1,300 @@
+[2025-11-25 02:28:51,005] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 02:28:51,043] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 304 0
+[2025-11-25 02:28:51,056] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 7672
+[2025-11-25 02:30:45,540] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 02:30:45,571] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 7669
+[2025-11-25 02:30:45,626] [WARNING] [django.server:213] "GET /image_codes/897c425f-112c-4710-b3d2-4d30d6f692c0/ HTTP/1.1" 404 2793
+[2025-11-25 02:30:46,357] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 02:30:46,379] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 304 0
+[2025-11-25 02:30:46,405] [WARNING] [django.server:213] "GET /image_codes/2c7173fc-c63d-46b6-948e-acb251fe479f/ HTTP/1.1" 404 2793
+[2025-11-25 02:30:48,433] [WARNING] [django.server:213] "GET /image_codes/b5157fcb-7a02-4ff5-9aa2-9dfcf1068eef/ HTTP/1.1" 404 2793
+[2025-11-25 02:30:49,040] [WARNING] [django.server:213] "GET /image_codes/3c51afee-d68c-4794-bfe5-7f5fc7e10585/ HTTP/1.1" 404 2793
+[2025-11-25 02:31:40,469] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-25 02:31:40,492] [INFO] [django.server:213] "GET / HTTP/1.1" 200 201
+[2025-11-25 02:55:45,865] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 02:55:45,891] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 7647
+[2025-11-25 02:58:19,972] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-25 02:58:19,980] [INFO] [django.server:213] "GET / HTTP/1.1" 200 201
+[2025-11-25 06:31:43,435] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 07:53:46,179] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 07:53:48,875] [INFO] [meiduo:15] 访问首页
+[2025-11-25 07:53:48,884] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-11-25 07:53:48,919] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 304 0
+[2025-11-25 07:53:48,959] [INFO] [django.server:213] "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+[2025-11-25 07:53:48,974] [INFO] [django.server:213] "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+[2025-11-25 07:53:48,990] [INFO] [django.server:213] "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+[2025-11-25 07:53:49,016] [INFO] [django.server:213] "GET /static/js/slide.js HTTP/1.1" 200 1822
+[2025-11-25 07:53:49,017] [INFO] [django.server:213] "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+[2025-11-25 07:53:49,035] [INFO] [django.server:213] "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+[2025-11-25 07:53:49,037] [INFO] [django.server:213] "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+[2025-11-25 07:53:49,041] [INFO] [django.server:213] "GET /static/js/index.js HTTP/1.1" 200 1388
+[2025-11-25 07:53:49,083] [INFO] [django.server:213] "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+[2025-11-25 07:53:49,089] [INFO] [django.server:213] "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+[2025-11-25 07:53:49,091] [INFO] [django.server:213] "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+[2025-11-25 07:53:49,099] [INFO] [django.server:213] "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+[2025-11-25 07:53:49,101] [INFO] [django.server:213] "GET /static/images/icons.png HTTP/1.1" 200 7740
+[2025-11-25 07:53:49,105] [INFO] [django.server:213] "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+[2025-11-25 07:53:49,105] [INFO] [django.server:213] "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+[2025-11-25 07:53:49,108] [INFO] [django.server:213] "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+[2025-11-25 07:53:49,109] [INFO] [django.server:213] "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+[2025-11-25 07:53:49,110] [INFO] [django.server:213] "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+[2025-11-25 07:53:49,111] [INFO] [django.server:213] "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+[2025-11-25 07:53:49,136] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-25 07:54:06,642] [INFO] [meiduo:15] 访问首页
+[2025-11-25 07:54:06,643] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-11-25 07:54:06,680] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-25 07:54:06,681] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-25 07:54:06,684] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-25 07:54:06,691] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-25 07:54:06,695] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-25 07:54:06,699] [INFO] [django.server:213] "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+[2025-11-25 07:54:06,701] [INFO] [django.server:213] "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+[2025-11-25 07:54:06,704] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-25 07:54:06,709] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-25 07:54:06,713] [INFO] [django.server:213] "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+[2025-11-25 07:54:06,715] [INFO] [django.server:213] "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+[2025-11-25 07:54:06,729] [INFO] [django.server:213] "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+[2025-11-25 07:54:06,730] [INFO] [django.server:213] "GET /static/js/slide.js HTTP/1.1" 200 1822
+[2025-11-25 07:54:06,749] [INFO] [django.server:213] "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+[2025-11-25 07:54:06,751] [INFO] [django.server:213] "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+[2025-11-25 07:54:06,752] [INFO] [django.server:213] "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+[2025-11-25 07:54:06,756] [INFO] [django.server:213] "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+[2025-11-25 07:54:06,759] [INFO] [django.server:213] "GET /static/js/index.js HTTP/1.1" 200 1388
+[2025-11-25 07:54:06,760] [INFO] [django.server:213] "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+[2025-11-25 07:54:06,763] [INFO] [django.server:213] "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+[2025-11-25 07:54:06,765] [INFO] [django.server:213] "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+[2025-11-25 07:54:06,767] [INFO] [django.server:213] "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+[2025-11-25 07:54:06,773] [INFO] [django.server:213] "GET /static/images/icons.png HTTP/1.1" 200 7740
+[2025-11-25 07:54:06,773] [INFO] [django.server:213] "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+[2025-11-25 07:54:06,775] [INFO] [django.server:213] "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+[2025-11-25 07:54:06,776] [INFO] [django.server:213] "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+[2025-11-25 07:54:06,875] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-25 07:54:06,906] [WARNING] [django.server:213] "GET /favicon.ico HTTP/1.1" 404 2615
+[2025-11-25 09:39:11,671] [WARNING] [django.server:213] "GET /users/register.html HTTP/1.1" 404 2755
+[2025-11-25 09:39:24,411] [WARNING] [django.server:213] "GET /users/register.html HTTP/1.1" 404 2755
+[2025-11-25 09:40:13,751] [WARNING] [django.server:213] "GET /users/register.html HTTP/1.1" 404 2755
+[2025-11-25 09:42:49,544] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 09:42:49,558] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 7647
+[2025-11-25 09:42:49,598] [INFO] [django.server:213] "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+[2025-11-25 09:42:49,599] [INFO] [django.server:213] "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+[2025-11-25 09:42:49,603] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-25 09:42:49,607] [INFO] [django.server:213] "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+[2025-11-25 09:44:40,200] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-25 09:44:40,207] [INFO] [meiduo:15] 访问首页
+[2025-11-25 09:44:40,207] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-11-25 09:44:40,269] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-25 09:47:32,654] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-25 09:47:33,187] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 09:47:56,888] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-25 09:47:57,353] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 09:48:13,901] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-25 09:48:14,406] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 09:49:36,542] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-25 09:49:36,959] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 09:50:23,967] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-25 09:50:24,388] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 09:50:30,741] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-25 09:50:31,220] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 09:51:20,187] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-25 09:51:20,589] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 09:54:00,366] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-25 09:54:00,783] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 10:02:38,555] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 10:07:09,463] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 15:15:50,638] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 15:16:34,073] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 15:16:34,109] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 304 0
+[2025-11-25 15:16:34,113] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 304 0
+[2025-11-25 15:30:27,897] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/urls.py changed, reloading.
+[2025-11-25 15:30:28,373] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 15:34:26,442] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 3177
+[2025-11-25 15:34:26,585] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-25 15:34:26,586] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-25 15:34:26,590] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-25 15:34:26,592] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-25 15:34:26,593] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-25 15:34:26,595] [INFO] [django.server:213] "GET /static/images/logo02.png HTTP/1.1" 200 8466
+[2025-11-25 15:34:26,596] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 200 1759
+[2025-11-25 15:34:26,599] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-25 15:34:26,624] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-25 15:34:26,634] [INFO] [django.server:213] "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+[2025-11-25 15:34:26,636] [INFO] [django.server:213] "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+[2025-11-25 15:34:26,679] [WARNING] [django.server:213] "GET /favicon.ico HTTP/1.1" 404 2609
+[2025-11-25 15:34:47,907] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 3289
+[2025-11-25 15:34:54,100] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 3177
+[2025-11-25 15:35:21,822] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-25 15:35:21,829] [INFO] [meiduo:15] 访问首页
+[2025-11-25 15:35:21,833] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-11-25 15:35:21,904] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-25 15:35:25,852] [INFO] [django.server:213] "GET /static/login.html HTTP/1.1" 200 2707
+[2025-11-25 15:35:25,872] [INFO] [django.server:213] "GET /static/images/logo02.png HTTP/1.1" 200 8466
+[2025-11-25 15:35:25,883] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 200 1759
+[2025-11-25 15:35:25,890] [INFO] [django.server:213] "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+[2025-11-25 15:35:25,897] [INFO] [django.server:213] "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+[2025-11-25 15:35:35,651] [INFO] [django.server:213] "POST /static/login.html HTTP/1.1" 200 2707
+[2025-11-25 15:35:39,982] [INFO] [django.server:213] "GET /static/login.html HTTP/1.1" 200 2707
+[2025-11-25 15:36:00,808] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 3177
+[2025-11-25 15:36:09,415] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 302 0
+[2025-11-25 15:36:09,417] [INFO] [meiduo:15] 访问首页
+[2025-11-25 15:36:09,418] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-11-25 15:36:09,432] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-25 15:36:09,433] [INFO] [django.server:213] "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+[2025-11-25 15:36:09,434] [INFO] [django.server:213] "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+[2025-11-25 15:36:09,442] [INFO] [django.server:213] "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+[2025-11-25 15:36:09,443] [INFO] [django.server:213] "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+[2025-11-25 15:36:09,458] [INFO] [django.server:213] "GET /static/js/index.js HTTP/1.1" 200 1388
+[2025-11-25 15:36:09,459] [INFO] [django.server:213] "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+[2025-11-25 15:36:09,461] [INFO] [django.server:213] "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+[2025-11-25 15:36:09,462] [INFO] [django.server:213] "GET /static/js/slide.js HTTP/1.1" 200 1822
+[2025-11-25 15:36:09,464] [INFO] [django.server:213] "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+[2025-11-25 15:36:09,471] [INFO] [django.server:213] "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+[2025-11-25 15:36:09,471] [INFO] [django.server:213] "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+[2025-11-25 15:36:09,473] [INFO] [django.server:213] "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+[2025-11-25 15:36:09,474] [INFO] [django.server:213] "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+[2025-11-25 15:36:09,477] [INFO] [django.server:213] "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+[2025-11-25 15:36:09,479] [INFO] [django.server:213] "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+[2025-11-25 15:36:09,480] [INFO] [django.server:213] "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+[2025-11-25 15:36:09,483] [INFO] [django.server:213] "GET /static/images/icons.png HTTP/1.1" 200 7740
+[2025-11-25 15:36:09,483] [INFO] [django.server:213] "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+[2025-11-25 15:36:09,484] [INFO] [django.server:213] "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+[2025-11-25 15:36:09,585] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-25 15:37:52,412] [INFO] [meiduo:15] 访问首页
+[2025-11-25 15:37:52,413] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-11-25 15:37:52,517] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-25 15:37:53,105] [INFO] [meiduo:15] 访问首页
+[2025-11-25 15:37:53,106] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-11-25 15:37:53,204] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-25 15:37:53,594] [INFO] [meiduo:15] 访问首页
+[2025-11-25 15:37:53,595] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-11-25 15:37:53,668] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-25 16:11:59,203] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-25 16:12:00,411] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 3177
+[2025-11-25 16:12:05,153] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 16:12:27,384] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-25 16:22:13,656] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 16:23:35,358] [WARNING] [django.server:213] "POST /users/register/ HTTP/1.1" 400 21
+[2025-11-25 16:24:05,438] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 16:24:39,650] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-25 16:24:39,660] [INFO] [meiduo:15] 访问首页
+[2025-11-25 16:24:39,678] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-11-25 16:24:39,773] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-25 16:25:30,209] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 16:28:19,009] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 16:28:32,251] [WARNING] [django.security.csrf:253] Forbidden (CSRF token from POST incorrect.): /users/register/
+[2025-11-25 16:28:32,251] [WARNING] [django.server:213] "POST /users/register/ HTTP/1.1" 403 2503
+[2025-11-25 16:28:37,294] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 16:29:11,698] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-25 16:29:11,705] [INFO] [meiduo:15] 访问首页
+[2025-11-25 16:29:11,709] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-11-25 16:29:11,780] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-25 16:29:32,860] [INFO] [meiduo:15] 访问首页
+[2025-11-25 16:29:32,862] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-11-25 16:29:33,136] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-25 16:29:33,143] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-25 16:29:33,148] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-25 16:29:33,150] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-25 16:29:33,156] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-25 16:29:33,157] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-25 16:29:33,165] [INFO] [django.server:213] "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+[2025-11-25 16:29:33,167] [INFO] [django.server:213] "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+[2025-11-25 16:29:33,169] [INFO] [django.server:213] "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+[2025-11-25 16:29:33,171] [INFO] [django.server:213] "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+[2025-11-25 16:29:33,173] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-25 16:29:33,177] [INFO] [django.server:213] "GET /static/js/slide.js HTTP/1.1" 200 1822
+[2025-11-25 16:29:33,178] [INFO] [django.server:213] "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+[2025-11-25 16:29:33,187] [INFO] [django.server:213] "GET /static/js/index.js HTTP/1.1" 200 1388
+[2025-11-25 16:29:33,189] [INFO] [django.server:213] "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+[2025-11-25 16:29:33,207] [INFO] [django.server:213] "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+[2025-11-25 16:29:33,208] [INFO] [django.server:213] "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+[2025-11-25 16:29:33,209] [INFO] [django.server:213] "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+[2025-11-25 16:29:33,213] [INFO] [django.server:213] "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+[2025-11-25 16:29:33,214] [INFO] [django.server:213] "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+[2025-11-25 16:29:33,216] [INFO] [django.server:213] "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+[2025-11-25 16:29:33,219] [INFO] [django.server:213] "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+[2025-11-25 16:29:33,221] [INFO] [django.server:213] "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+[2025-11-25 16:29:33,222] [INFO] [django.server:213] "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+[2025-11-25 16:29:33,223] [INFO] [django.server:213] "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+[2025-11-25 16:29:33,269] [INFO] [django.server:213] "GET /static/images/icons.png HTTP/1.1" 200 7740
+[2025-11-25 16:29:33,278] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-25 16:29:33,373] [WARNING] [django.server:213] "GET /favicon.ico HTTP/1.1" 404 2609
+[2025-11-25 16:31:39,620] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-25 16:33:36,699] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 16:52:00,664] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 16:52:08,557] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 16:52:08,845] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-25 16:54:10,511] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-25 16:54:22,719] [INFO] [meiduo:15] 访问首页
+[2025-11-25 16:54:32,525] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-11-25 16:54:32,672] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-25 16:54:48,937] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 16:54:52,353] [WARNING] [django.security.csrf:253] Forbidden (CSRF token from POST incorrect.): /users/register/
+[2025-11-25 16:54:52,354] [WARNING] [django.server:213] "POST /users/register/ HTTP/1.1" 403 2503
+[2025-11-25 16:54:54,977] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 16:58:50,526] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 17:08:10,355] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 3177
+[2025-11-25 17:08:10,407] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-25 17:08:10,421] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-25 17:08:10,425] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-25 17:08:10,425] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-25 17:08:10,430] [INFO] [django.server:213] "GET /static/images/logo02.png HTTP/1.1" 200 8466
+[2025-11-25 17:08:10,432] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-25 17:08:10,441] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-25 17:08:10,669] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 200 1759
+[2025-11-25 17:08:10,678] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-25 17:08:10,681] [INFO] [django.server:213] "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+[2025-11-25 17:08:10,687] [INFO] [django.server:213] "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+[2025-11-25 17:08:10,891] [WARNING] [django.server:213] "GET /favicon.ico HTTP/1.1" 404 2609
+[2025-11-25 17:08:27,645] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-25 17:08:27,652] [INFO] [meiduo:15] 访问首页
+[2025-11-25 17:08:27,656] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-11-25 17:08:27,722] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-25 17:08:31,347] [INFO] [django.server:213] "GET /static/login.html HTTP/1.1" 304 0
+[2025-11-25 17:08:48,612] [INFO] [django.server:213] "POST /static/login.html HTTP/1.1" 200 2707
+[2025-11-25 17:21:34,978] [INFO] [django.server:213] "GET /static/login.html HTTP/1.1" 200 2707
+[2025-11-25 17:21:37,190] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 17:23:21,613] [WARNING] [django.server:213] "POST /users/register/ HTTP/1.1" 400 18
+[2025-11-25 17:25:34,585] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-25 17:26:29,254] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 17:26:29,293] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 8392
+[2025-11-25 17:26:29,387] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-25 17:26:42,036] [WARNING] [django.server:213] "GET /usernames//count/ HTTP/1.1" 404 2633
+[2025-11-25 17:26:59,901] [WARNING] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 404 2654
+[2025-11-25 17:27:04,843] [WARNING] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 404 2654
+[2025-11-25 17:29:12,117] [WARNING] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 404 2654
+[2025-11-25 17:31:29,980] [WARNING] [django.server:213] "GET /usernames//count/ HTTP/1.1" 404 2633
+[2025-11-25 17:40:53,550] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/urls.py changed, reloading.
+[2025-11-25 17:40:53,963] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 17:41:03,259] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-25 17:41:03,788] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 17:41:26,101] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 17:41:26,133] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 304 0
+[2025-11-25 17:41:26,303] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-25 17:41:31,934] [INFO] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-25 17:41:37,377] [INFO] [django.server:213] "GET /usernames/user002/count/ HTTP/1.1" 200 23
+[2025-11-25 17:41:43,794] [INFO] [django.server:213] "GET /usernames/user003/count/ HTTP/1.1" 200 23
+[2025-11-25 17:41:46,345] [INFO] [django.server:213] "GET /usernames/user004/count/ HTTP/1.1" 200 23
+[2025-11-25 17:41:50,705] [INFO] [django.server:213] "GET /usernames/user004/count/ HTTP/1.1" 200 23
+[2025-11-25 17:41:56,160] [INFO] [django.server:213] "GET /usernames/user004/count/ HTTP/1.1" 200 23
+[2025-11-25 17:44:34,234] [INFO] [django.server:213] "GET /usernames/user004/count/ HTTP/1.1" 200 23
+[2025-11-25 17:46:13,860] [INFO] [django.server:213] "GET /usernames/user004/count/ HTTP/1.1" 200 23
+[2025-11-25 17:46:14,503] [INFO] [django.server:213] "GET /usernames/user004/count/ HTTP/1.1" 200 23
+[2025-11-25 17:46:17,657] [INFO] [django.server:213] "GET /usernames/user003/count/ HTTP/1.1" 200 23
+[2025-11-25 17:46:22,963] [INFO] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-25 17:59:00,392] [INFO] [django.server:213] "GET /usernames/test123/count/ HTTP/1.1" 200 23
+[2025-11-25 17:59:16,279] [INFO] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-25 17:59:22,211] [INFO] [django.server:213] "GET /usernames/user006/count/ HTTP/1.1" 200 23
+[2025-11-25 18:03:18,601] [INFO] [django.server:213] "GET /usernames/admin/count/ HTTP/1.1" 200 23
+[2025-11-25 18:05:58,449] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-25 18:05:58,930] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 18:06:14,829] [WARNING] [django.server:213] "GET /usernames/user005/count/ HTTP/1.1" 404 2654
+[2025-11-25 18:06:18,291] [WARNING] [django.server:213] "GET /usernames/user004/count/ HTTP/1.1" 404 2654
+[2025-11-25 18:06:28,852] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-25 18:06:29,327] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 18:06:30,853] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-25 18:06:30,880] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 8387
+[2025-11-25 18:06:35,537] [INFO] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-25 18:06:37,849] [INFO] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-25 18:06:45,972] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/urls.py changed, reloading.
+[2025-11-25 18:06:46,476] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-25 18:10:19,570] [INFO] [django.server:213] "GET /usernames/test123/count/ HTTP/1.1" 200 23
+[2025-11-25 18:11:56,082] [INFO] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 200 23

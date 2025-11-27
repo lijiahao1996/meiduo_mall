@@ -1,0 +1,423 @@
+[2025-11-24 07:14:02,565] [ERROR] [django.request:253] Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.users.views.view didn't return an HttpResponse object. It returned None instead.
+[2025-11-24 07:14:03,172] [ERROR] [django.request:253] Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.users.views.view didn't return an HttpResponse object. It returned None instead.
+[2025-11-24 16:39:46,011] [ERROR] [django.request:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py", line 28, in index
+    return render(request, "index.html", {"name": "TestName"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 74, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/templates/index.html", line 6, in top-level template code
+    <a href="{{ url('users:info') }}">用户中心</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'info' not found. 'info' is not a valid view function or pattern name.
+[2025-11-24 16:54:55,193] [ERROR] [django.request:253] Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 27, in get
+    return render(request, "users/register.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 74, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/templates/users/register.html", line 36, in top-level template code
+    {{ csrf_input(request) | safe }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '__proxy__' object is not callable
+[2025-11-24 16:55:06,120] [ERROR] [django.request:253] Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 27, in get
+    return render(request, "users/register.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 74, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/templates/users/register.html", line 36, in top-level template code
+    {{ csrf_input(request) | safe }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '__proxy__' object is not callable
+[2025-11-24 17:01:33,752] [ERROR] [django.request:253] Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 27, in get
+    return render(request, "users/register.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 74, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/templates/users/register.html", line 36, in top-level template code
+    {{ csrf_input(request) | safe }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '__proxy__' object is not callable
+[2025-11-24 17:01:37,926] [ERROR] [django.request:253] Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 27, in get
+    return render(request, "users/register.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 74, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/templates/users/register.html", line 36, in top-level template code
+    {{ csrf_input(request) | safe }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '__proxy__' object is not callable
+[2025-11-24 17:04:31,481] [ERROR] [django.request:253] Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 27, in get
+    return render(request, "users/register.html", context={})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 74, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/templates/users/register.html", line 36, in top-level template code
+    {{ csrf_input(request) | safe }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '__proxy__' object is not callable
+[2025-11-24 17:04:36,238] [ERROR] [django.request:253] Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 27, in get
+    return render(request, "users/register.html", context={})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 74, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/templates/users/register.html", line 36, in top-level template code
+    {{ csrf_input(request) | safe }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '__proxy__' object is not callable
+[2025-11-24 17:05:49,087] [ERROR] [django.request:253] Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 27, in get
+    return render(request, "users/register.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 74, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/templates/users/register.html", line 36, in top-level template code
+    {{ csrf_input(request) | safe }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '__proxy__' object is not callable
+[2025-11-24 17:23:39,997] [ERROR] [django.request:253] Internal Server Error: /users/info/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 194, in get
+    return render(request, "users/user_center_info.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: users/user_center_info.html
+[2025-11-24 17:23:45,180] [ERROR] [django.request:253] Internal Server Error: /users/info/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 194, in get
+    return render(request, "users/user_center_info.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: users/user_center_info.html
+[2025-11-24 17:54:29,306] [ERROR] [django.request:253] Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 27, in get
+    return render(request, "users/register.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 74, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/templates/users/register.html", line 36, in top-level template code
+    <!--                    {{ csrf_field(request) | safe }}-->
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'csrf_field' is undefined
+[2025-11-24 17:55:23,522] [ERROR] [django.request:253] Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 27, in get
+    return render(request, "users/register.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 74, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/templates/users/register.html", line 36, in top-level template code
+    {{ csrf_field(request) | safe }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'csrf_field' is undefined

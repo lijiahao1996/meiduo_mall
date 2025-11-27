@@ -1,0 +1,391 @@
+[2025-11-26 01:41:52,858] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/urls.py changed, reloading.
+[2025-11-26 01:41:53,790] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 01:53:54,764] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/urls.py changed, reloading.
+[2025-11-26 01:53:55,217] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 01:59:59,168] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 01:59:59,639] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:00:04,710] [WARNING] [django.server:213] "GET /usernames//count/ HTTP/1.1" 404 2633
+[2025-11-26 02:00:06,361] [WARNING] [django.server:213] "GET /usernames//count/ HTTP/1.1" 404 2633
+[2025-11-26 02:00:48,827] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 02:00:49,247] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:01:12,716] [WARNING] [django.server:213] "GET /usernames//count/ HTTP/1.1" 404 2832
+[2025-11-26 02:04:36,729] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 02:04:37,146] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:06:11,248] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-26 02:06:11,265] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 304 0
+[2025-11-26 02:06:11,275] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 8393
+[2025-11-26 02:06:12,243] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3544
+[2025-11-26 02:06:13,327] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3544
+[2025-11-26 02:07:44,211] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3544
+[2025-11-26 02:07:44,324] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/urls.py changed, reloading.
+[2025-11-26 02:07:44,769] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:07:45,194] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:07:46,542] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:07:50,078] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:07:51,192] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:07:58,195] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:08:00,788] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:08:01,697] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:08:02,686] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:09:51,179] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 02:09:51,725] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:09:52,166] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 4038
+[2025-11-26 02:09:52,985] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 4038
+[2025-11-26 02:09:53,808] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 4038
+[2025-11-26 02:09:54,667] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 4038
+[2025-11-26 02:11:08,072] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 02:11:08,515] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:11:09,067] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 4044
+[2025-11-26 02:11:12,099] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-26 02:11:12,111] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 304 0
+[2025-11-26 02:11:12,914] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 4044
+[2025-11-26 02:11:13,781] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 4044
+[2025-11-26 02:11:14,801] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 4044
+[2025-11-26 02:11:23,223] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 02:11:23,657] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:11:27,446] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:11:28,319] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:11:29,350] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:12:03,205] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:12:03,954] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:12:04,977] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:12:08,644] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:12:10,006] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-26 02:12:10,021] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 8386
+[2025-11-26 02:12:56,413] [INFO] [django.server:213] code 400, message Bad request syntax ('\x16\x03\x01\x07\x18\x01\x00\x07\x14\x03\x03]\x9ez\x9bãÆ,êk')
+[2025-11-26 02:12:56,413] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-26 02:12:56,421] [INFO] [django.server:213] code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06«\x1a\x1a\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00')
+[2025-11-26 02:12:56,421] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-11-26 02:12:58,660] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-26 02:12:58,697] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-26 02:12:58,703] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-26 02:12:58,704] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-26 02:12:58,719] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-26 02:12:58,721] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-26 02:12:58,722] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-26 02:12:58,731] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-26 02:12:58,733] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 8387
+[2025-11-26 02:12:58,741] [INFO] [django.server:213] "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+[2025-11-26 02:12:58,742] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-26 02:12:58,745] [INFO] [django.server:213] "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+[2025-11-26 02:12:58,811] [INFO] [django.server:213] "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+[2025-11-26 02:13:02,382] [WARNING] [django.server:213] "GET /usernames//count/ HTTP/1.1" 404 2633
+[2025-11-26 02:13:04,191] [WARNING] [django.server:213] "GET /usernames//count/ HTTP/1.1" 404 2633
+[2025-11-26 02:13:05,390] [WARNING] [django.server:213] "GET /usernames//count/ HTTP/1.1" 404 2633
+[2025-11-26 02:13:44,231] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 02:13:44,687] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:13:47,753] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-26 02:13:47,770] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 8387
+[2025-11-26 02:13:48,669] [WARNING] [django.server:213] "GET /usernames//count/ HTTP/1.1" 404 2832
+[2025-11-26 02:13:49,772] [WARNING] [django.server:213] "GET /usernames//count/ HTTP/1.1" 404 2832
+[2025-11-26 02:13:51,003] [WARNING] [django.server:213] "GET /usernames//count/ HTTP/1.1" 404 2832
+[2025-11-26 02:13:55,713] [INFO] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:13:58,004] [INFO] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:13:58,842] [INFO] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:13:59,814] [INFO] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:15:01,996] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/urls.py changed, reloading.
+[2025-11-26 02:15:02,460] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:15:07,641] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/urls.py changed, reloading.
+[2025-11-26 02:15:08,147] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:15:59,991] [WARNING] [django.server:213] "GET /usernames//count/ HTTP/1.1" 404 2832
+[2025-11-26 02:16:00,821] [WARNING] [django.server:213] "GET /usernames//count/ HTTP/1.1" 404 2832
+[2025-11-26 02:16:04,211] [INFO] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:16:05,833] [INFO] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:16:09,438] [INFO] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:16:10,156] [INFO] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:17:00,274] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 02:17:00,733] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:17:01,492] [WARNING] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 404 2654
+[2025-11-26 02:17:06,642] [WARNING] [django.server:213] "GET /usernames/user002/count/ HTTP/1.1" 404 2654
+[2025-11-26 02:17:11,164] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 02:17:11,603] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:17:12,545] [INFO] [django.server:213] "GET /usernames/user002/count/ HTTP/1.1" 200 23
+[2025-11-26 02:17:32,220] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 02:17:32,688] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:17:33,603] [WARNING] [django.server:213] "GET /usernames/user002/count/ HTTP/1.1" 404 2654
+[2025-11-26 02:17:34,345] [WARNING] [django.server:213] "GET /usernames/user002/count/ HTTP/1.1" 404 2654
+[2025-11-26 02:17:35,235] [WARNING] [django.server:213] "GET /usernames/user002/count/ HTTP/1.1" 404 2654
+[2025-11-26 02:18:46,198] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 02:18:46,656] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:20:33,489] [INFO] [django.server:213] "GET /usernames/user002/count/ HTTP/1.1" 200 23
+[2025-11-26 02:20:34,699] [INFO] [django.server:213] "GET /usernames/user002/count/ HTTP/1.1" 200 23
+[2025-11-26 02:20:41,504] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/urls.py changed, reloading.
+[2025-11-26 02:20:41,972] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:20:44,315] [INFO] [django.server:213] "GET /usernames/user002/count/ HTTP/1.1" 200 23
+[2025-11-26 02:20:46,051] [INFO] [django.server:213] "GET /usernames/user002/count/ HTTP/1.1" 200 23
+[2025-11-26 02:20:59,711] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/urls.py changed, reloading.
+[2025-11-26 02:21:00,316] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:21:02,222] [WARNING] [django.server:213] "GET /usernames/user002/count/ HTTP/1.1" 404 2654
+[2025-11-26 02:22:55,749] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-26 02:22:55,781] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-26 02:22:55,788] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-26 02:22:55,794] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-26 02:22:55,797] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-26 02:22:55,799] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-26 02:22:55,800] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-26 02:22:55,822] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 8393
+[2025-11-26 02:22:55,824] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-26 02:22:55,829] [INFO] [django.server:213] "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+[2025-11-26 02:22:55,832] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-26 02:22:55,833] [INFO] [django.server:213] "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+[2025-11-26 02:22:55,845] [INFO] [django.server:213] "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+[2025-11-26 02:22:57,745] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:22:58,564] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:22:59,943] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:23:20,265] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:23:21,075] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:23:25,253] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:23:26,353] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:23:27,703] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:23:34,086] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:23:35,028] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:23:36,459] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:23:42,326] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:23:43,895] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:24:01,353] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 02:24:01,824] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:24:08,982] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-26 02:24:09,017] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-26 02:24:09,027] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-26 02:24:09,027] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-26 02:24:09,036] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-26 02:24:09,038] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-26 02:24:09,039] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-26 02:24:09,048] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 8393
+[2025-11-26 02:24:09,050] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-26 02:24:09,073] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-26 02:24:09,074] [INFO] [django.server:213] "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+[2025-11-26 02:24:09,081] [INFO] [django.server:213] "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+[2025-11-26 02:24:09,082] [INFO] [django.server:213] "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+[2025-11-26 02:24:13,961] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:24:15,310] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:27:58,245] [INFO] [django.server:213] "GET //users/usernames/admin/count/ HTTP/1.1" 200 23
+[2025-11-26 02:28:05,791] [INFO] [django.server:213] "GET //users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:29:04,845] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:30:33,744] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 02:30:34,176] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:31:19,116] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:31:23,058] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:31:26,936] [INFO] [django.server:213] "GET /users/usernames/user008/count/ HTTP/1.1" 200 23
+[2025-11-26 02:35:22,786] [INFO] [django.server:213] "GET /users/usernames/user008/count/ HTTP/1.1" 200 23
+[2025-11-26 02:35:24,760] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:35:25,581] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:35:26,407] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:35:27,166] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:35:28,030] [WARNING] [django.server:213] "GET /users/usernames//count/ HTTP/1.1" 404 3839
+[2025-11-26 02:35:45,473] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-26 02:35:45,506] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-26 02:35:45,510] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-26 02:35:45,511] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-26 02:35:45,515] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-26 02:35:45,517] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-26 02:35:45,519] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-26 02:35:45,537] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-26 02:35:45,542] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 8774
+[2025-11-26 02:35:45,543] [INFO] [django.server:213] "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+[2025-11-26 02:35:45,545] [INFO] [django.server:213] "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+[2025-11-26 02:35:45,546] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-26 02:35:45,558] [INFO] [django.server:213] "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+[2025-11-26 02:35:58,175] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:38:51,880] [INFO] [django.server:213] "GET /users/usernames/user002/count/ HTTP/1.1" 200 23
+[2025-11-26 02:38:56,580] [INFO] [django.server:213] "GET /users/usernames/user008/count/ HTTP/1.1" 200 23
+[2025-11-26 02:42:21,237] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:43:25,615] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:44:03,129] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:44:10,915] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:44:39,200] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:47:18,697] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:47:23,206] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:47:25,959] [INFO] [django.server:213] "GET /users/usernames/user002/count/ HTTP/1.1" 200 23
+[2025-11-26 02:47:28,938] [INFO] [django.server:213] "GET /users/usernames/user009/count/ HTTP/1.1" 200 23
+[2025-11-26 02:48:21,774] [WARNING] [django.server:213] "GET /usernames/user001/count/ HTTP/1.1" 404 2654
+[2025-11-26 02:48:41,728] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:50:29,715] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 02:50:45,425] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 02:51:07,757] [INFO] [django.server:213] "GET /users/usernames/user009/count/ HTTP/1.1" 200 23
+[2025-11-26 02:55:30,312] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 03:05:59,000] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-26 03:06:25,727] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-26 03:06:43,190] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-26 03:06:43,249] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 304 0
+[2025-11-26 03:06:43,414] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-26 03:06:45,653] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-26 03:06:50,439] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-26 03:06:54,849] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-26 03:08:04,347] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-26 03:08:16,676] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-26 03:08:16,708] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-26 03:08:16,711] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-26 03:08:16,712] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-26 03:08:16,716] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-26 03:08:16,717] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-26 03:08:16,719] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-26 03:08:16,726] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-26 03:08:16,732] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 8774
+[2025-11-26 03:08:16,736] [INFO] [django.server:213] "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+[2025-11-26 03:08:16,739] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-26 03:08:16,740] [INFO] [django.server:213] "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+[2025-11-26 03:08:16,759] [INFO] [django.server:213] "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+[2025-11-26 03:08:21,389] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-26 03:10:06,431] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-26 03:12:28,835] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-26 03:12:28,869] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 304 0
+[2025-11-26 03:12:28,941] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-26 03:21:21,675] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 03:26:57,937] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-26 03:26:57,972] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 304 0
+[2025-11-26 03:27:26,269] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-26 03:27:26,333] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-26 03:27:26,368] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-26 03:27:26,387] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-26 03:27:26,389] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-26 03:27:26,399] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-26 03:27:26,404] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-26 03:27:26,406] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-26 03:27:26,431] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 8774
+[2025-11-26 03:27:26,433] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-26 03:27:26,444] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-26 03:27:26,447] [INFO] [django.server:213] "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+[2025-11-26 03:27:26,457] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-11-26 03:27:26,459] [INFO] [django.server:213] "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+[2025-11-26 03:27:26,477] [INFO] [django.server:213] "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+[2025-11-26 03:31:38,191] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 03:33:24,370] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 03:37:15,516] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 03:41:16,040] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 03:41:46,615] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 03:42:55,106] [INFO] [django.server:213] "GET /users/usernames/user001/count/ HTTP/1.1" 200 23
+[2025-11-26 06:45:47,969] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 06:45:49,839] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6559
+[2025-11-26 06:45:49,862] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 8724
+[2025-11-26 06:45:49,924] [INFO] [django.server:213] "GET /users/image_codes/04febd5a-5a27-473e-982a-e851c4c26f03/ HTTP/1.1" 200 596
+[2025-11-26 06:45:54,584] [INFO] [django.server:213] "GET /users/image_codes/cb33e2de-a343-4700-8b05-7aeb302f9fb9/ HTTP/1.1" 200 366
+[2025-11-26 06:45:55,258] [INFO] [django.server:213] "GET /users/image_codes/f9b3025a-3e3b-4b45-80aa-fc323018fe9f/ HTTP/1.1" 200 523
+[2025-11-26 06:45:56,058] [INFO] [django.server:213] "GET /users/image_codes/56a6c470-37df-44b0-b834-264a036b3cf1/ HTTP/1.1" 200 603
+[2025-11-26 06:45:56,491] [INFO] [django.server:213] "GET /users/image_codes/e49c50c8-6385-49a9-a4ed-fbec360eccd6/ HTTP/1.1" 200 561
+[2025-11-26 06:45:57,051] [INFO] [django.server:213] "GET /users/image_codes/50c6b1cf-1ce2-422d-853c-7135b6af00ee/ HTTP/1.1" 200 475
+[2025-11-26 06:45:57,700] [INFO] [django.server:213] "GET /users/image_codes/1a3b2896-a2f7-4666-b92a-9e186e0c5b22/ HTTP/1.1" 200 568
+[2025-11-26 06:45:58,394] [INFO] [django.server:213] "GET /users/image_codes/0d133269-b431-4277-951c-125bf2fae96e/ HTTP/1.1" 200 545
+[2025-11-26 06:45:59,042] [INFO] [django.server:213] "GET /users/image_codes/7386341f-ed87-4aee-a5ce-37c4fddb18ec/ HTTP/1.1" 200 569
+[2025-11-26 06:45:59,646] [INFO] [django.server:213] "GET /users/image_codes/30b260d5-10a0-4dc4-a799-a25ffb7c9ed9/ HTTP/1.1" 200 466
+[2025-11-26 06:46:00,241] [INFO] [django.server:213] "GET /users/image_codes/541e0eae-f19b-4db2-ad84-46c4c29c188f/ HTTP/1.1" 200 550
+[2025-11-26 06:46:00,755] [INFO] [django.server:213] "GET /users/image_codes/c1c704a7-5df7-4be6-ba26-9dff47ec2f8a/ HTTP/1.1" 200 697
+[2025-11-26 06:46:01,296] [INFO] [django.server:213] "GET /users/image_codes/de2d73ed-4df3-4897-98a8-c5a0ca30be46/ HTTP/1.1" 200 618
+[2025-11-26 06:46:01,722] [INFO] [django.server:213] "GET /users/image_codes/1b76493a-a7fa-4541-9438-2bee29ce1ea3/ HTTP/1.1" 200 592
+[2025-11-26 06:46:02,288] [INFO] [django.server:213] "GET /users/image_codes/8b731bf4-0a38-4f28-968e-f5d481dd9fd6/ HTTP/1.1" 200 664
+[2025-11-26 06:46:32,584] [INFO] [django.server:213] "GET /users/image_codes/f1073008-1284-42c6-9829-6f89e0321c51/ HTTP/1.1" 200 535
+[2025-11-26 06:46:32,878] [INFO] [django.server:213] "GET /users/image_codes/aa3c62bb-1f35-4efb-88ae-245203d0d27b/ HTTP/1.1" 200 599
+[2025-11-26 06:46:33,017] [INFO] [django.server:213] "GET /users/image_codes/0a94ebd0-7875-4979-8a19-7bbb317064ba/ HTTP/1.1" 200 609
+[2025-11-26 06:46:33,203] [INFO] [django.server:213] "GET /users/image_codes/cfd9d4f2-18b9-4990-81ed-2433f39d91bf/ HTTP/1.1" 200 615
+[2025-11-26 06:46:33,277] [INFO] [django.server:213] "GET /users/image_codes/fecdb25f-020b-470e-8e50-e3584589e8c8/ HTTP/1.1" 200 592
+[2025-11-26 06:46:33,733] [INFO] [django.server:213] "GET /users/image_codes/0ac78dc6-0e67-4e4d-a928-e039b4607b56/ HTTP/1.1" 200 599
+[2025-11-26 06:46:34,400] [INFO] [django.server:213] "GET /users/image_codes/45f387bc-1d86-4cd2-b547-e07808c73a50/ HTTP/1.1" 200 641
+[2025-11-26 06:46:34,543] [INFO] [django.server:213] "GET /users/image_codes/f4d4c446-0abc-4c7e-acee-8671ab460fc7/ HTTP/1.1" 200 683
+[2025-11-26 06:46:34,689] [INFO] [django.server:213] "GET /users/image_codes/6597704c-93b6-4d6a-b4c8-02e87ed6b540/ HTTP/1.1" 200 556
+[2025-11-26 06:50:55,166] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-26 06:50:55,605] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 06:56:28,795] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6654
+[2025-11-26 06:56:28,808] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 304 0
+[2025-11-26 06:56:28,854] [INFO] [django.server:213] "GET /users/image_codes/d30a9b15-4969-4b2e-9f30-fb4d72a04fa7/ HTTP/1.1" 200 575
+[2025-11-26 06:56:30,651] [INFO] [django.server:213] "GET /users/image_codes/71108221-9da0-4aeb-9414-38bea5deb705/ HTTP/1.1" 200 504
+[2025-11-26 06:56:43,942] [INFO] [django.server:213] "GET /users/usernames/user005/count/ HTTP/1.1" 200 23
+[2025-11-26 06:57:06,272] [INFO] [django.server:213] "GET /users/usernames/user005/count/ HTTP/1.1" 200 23
+[2025-11-26 06:57:09,005] [INFO] [django.server:213] "GET /users/usernames/user005/count/ HTTP/1.1" 200 23
+[2025-11-26 06:57:13,889] [INFO] [django.server:213] "GET /users/usernames/user005/count/ HTTP/1.1" 200 23
+[2025-11-26 06:57:19,555] [INFO] [django.server:213] "GET /users/usernames/user005/count/ HTTP/1.1" 200 23
+[2025-11-26 06:57:24,559] [INFO] [django.server:213] "GET /users/image_codes/638487a1-e3ef-4218-81bf-aeb6195a689c/ HTTP/1.1" 200 560
+[2025-11-26 06:57:29,519] [INFO] [django.server:213] "GET /users/usernames/user005/count/ HTTP/1.1" 200 23
+[2025-11-26 06:59:28,839] [INFO] [django.server:213] "GET /users/image_codes/4feadbdf-661c-49e5-9e85-8e0531d0b0bd/ HTTP/1.1" 200 611
+[2025-11-26 06:59:29,297] [INFO] [django.server:213] "GET /users/image_codes/6f8d1108-8ff0-4368-a122-931c4d784e84/ HTTP/1.1" 200 549
+[2025-11-26 06:59:31,966] [INFO] [django.server:213] "GET /users/usernames/user005/count/ HTTP/1.1" 200 23
+[2025-11-26 06:59:36,186] [INFO] [django.server:213] "GET /users/usernames/user005/count/ HTTP/1.1" 200 23
+[2025-11-26 06:59:36,207] [WARNING] [django.server:213] "POST /users/register/ HTTP/1.1" 400 15
+[2025-11-26 06:59:38,332] [INFO] [django.server:213] "GET /users/image_codes/f5aef290-6a49-4601-b7f1-a217d8465eda/ HTTP/1.1" 200 565
+[2025-11-26 06:59:46,523] [INFO] [django.server:213] "GET /users/usernames/username001/count/ HTTP/1.1" 200 23
+[2025-11-26 07:00:05,582] [INFO] [django.server:213] "GET /users/usernames/username001/count/ HTTP/1.1" 200 23
+[2025-11-26 07:00:05,590] [WARNING] [django.server:213] "POST /users/register/ HTTP/1.1" 400 15
+[2025-11-26 07:00:08,495] [INFO] [django.server:213] "GET /users/image_codes/1dc618fc-ace3-4a36-a8d3-5110215ed60a/ HTTP/1.1" 200 465
+[2025-11-26 07:00:21,338] [INFO] [django.server:213] "GET /users/usernames/username111/count/ HTTP/1.1" 200 23
+[2025-11-26 07:00:35,460] [INFO] [django.server:213] "GET /users/usernames/username111/count/ HTTP/1.1" 200 23
+[2025-11-26 07:00:49,863] [INFO] [django.server:213] "GET /users/usernames/username111/count/ HTTP/1.1" 200 23
+[2025-11-26 07:00:54,666] [INFO] [django.server:213] "GET /users/usernames/username111/count/ HTTP/1.1" 200 23
+[2025-11-26 07:00:55,128] [INFO] [django.server:213] "POST /users/register/ HTTP/1.1" 302 0
+[2025-11-26 07:00:55,134] [INFO] [meiduo:15] 访问首页
+[2025-11-26 07:00:55,139] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-11-26 07:00:55,212] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-11-26 07:02:41,947] [INFO] [django.server:213] "GET /static/login.html HTTP/1.1" 304 0
+[2025-11-26 07:06:03,723] [INFO] [django.server:213] "GET /users/image_codes/c64857fa-8bf2-4f9e-a614-5010c1ed6da7/ HTTP/1.1" 200 596
+[2025-11-26 07:06:04,024] [INFO] [django.server:213] "GET /users/image_codes/ce17de2b-f3b0-4a85-ac04-ea59aefc793a/ HTTP/1.1" 200 719
+[2025-11-26 07:06:04,136] [INFO] [django.server:213] "GET /users/image_codes/1ea12771-40c1-4f2e-aa8c-ae37114273c1/ HTTP/1.1" 200 543
+[2025-11-26 07:06:04,296] [INFO] [django.server:213] "GET /users/image_codes/710f3b9c-3b3d-4f82-8708-677f00d0a3a1/ HTTP/1.1" 200 575
+[2025-11-26 07:06:04,438] [INFO] [django.server:213] "GET /users/image_codes/10e32a04-c08b-4619-b518-19bd04aad8f7/ HTTP/1.1" 200 599
+[2025-11-26 07:06:04,576] [INFO] [django.server:213] "GET /users/image_codes/fa49716b-5ff1-42ae-b3d7-2ac523e752ce/ HTTP/1.1" 200 567
+[2025-11-26 07:06:04,734] [INFO] [django.server:213] "GET /users/image_codes/f6e3b1e3-1250-4028-a9f9-c148bd91ef71/ HTTP/1.1" 200 572
+[2025-11-26 07:06:09,936] [INFO] [django.server:213] "GET /users/image_codes/5cb803b1-bdba-4ec6-b869-b048669ef1c8/ HTTP/1.1" 200 441
+[2025-11-26 07:06:10,069] [INFO] [django.server:213] "GET /users/image_codes/df152c6c-3559-4ae2-89b6-68ac448a6135/ HTTP/1.1" 200 654
+[2025-11-26 07:06:10,211] [INFO] [django.server:213] "GET /users/image_codes/ad5c5102-1930-40f4-aed8-7c5ccdc0ca00/ HTTP/1.1" 200 503
+[2025-11-26 07:06:11,587] [INFO] [django.server:213] "GET /users/image_codes/930b152e-027c-4d83-9bd1-e66526fb9079/ HTTP/1.1" 200 634
+[2025-11-26 07:06:11,722] [INFO] [django.server:213] "GET /users/image_codes/75e8de8a-93e3-4174-85d5-f61963a0da95/ HTTP/1.1" 200 627
+[2025-11-26 07:06:11,865] [INFO] [django.server:213] "GET /users/image_codes/0a03030b-359c-492b-99d9-3d7d27bef5bb/ HTTP/1.1" 200 640
+[2025-11-26 07:25:49,988] [INFO] [django.server:213] "GET /users/image_codes/f45245ad-f3e8-439b-b582-1a32722db770/ HTTP/1.1" 200 522
+[2025-11-26 07:25:50,349] [INFO] [django.server:213] "GET /users/image_codes/e31a4883-fc5f-49b2-aed3-8be67e4f4882/ HTTP/1.1" 200 699
+[2025-11-26 07:25:50,520] [INFO] [django.server:213] "GET /users/image_codes/adafb3d6-484f-49e0-8dc9-d5310823865d/ HTTP/1.1" 200 556
+[2025-11-26 07:25:50,905] [INFO] [django.server:213] "GET /users/image_codes/7531348d-2385-4d33-851d-d6b03342b87d/ HTTP/1.1" 200 388
+[2025-11-26 07:25:51,076] [INFO] [django.server:213] "GET /users/image_codes/013c820b-79d2-475a-ae9b-78a79347b531/ HTTP/1.1" 200 479
+[2025-11-26 07:25:51,185] [INFO] [django.server:213] "GET /users/image_codes/0dc1a41c-333c-404c-8292-1243e2ba8a8a/ HTTP/1.1" 200 426
+[2025-11-26 07:25:51,331] [INFO] [django.server:213] "GET /users/image_codes/b9c738be-02d4-42d5-84fd-7af8fedcb14c/ HTTP/1.1" 200 566
+[2025-11-26 07:25:51,485] [INFO] [django.server:213] "GET /users/image_codes/0c4d1943-adaa-4aeb-ab82-c16fa23081b7/ HTTP/1.1" 200 568
+[2025-11-26 07:25:51,944] [INFO] [django.server:213] "GET /users/image_codes/2288cffa-a650-4f8d-a54e-d362f7d80226/ HTTP/1.1" 200 570
+[2025-11-26 07:25:52,320] [INFO] [django.server:213] "GET /users/image_codes/276dbc14-e612-49a4-afff-7a74995b1581/ HTTP/1.1" 200 487
+[2025-11-26 07:25:52,873] [INFO] [django.server:213] "GET /users/image_codes/56e96aa5-7c20-47ca-800e-cb596f0a4bc4/ HTTP/1.1" 200 576
+[2025-11-26 07:25:53,046] [INFO] [django.server:213] "GET /users/image_codes/dd78aeb8-7b1f-4303-9d53-a34cf534b61e/ HTTP/1.1" 200 547
+[2025-11-26 07:25:53,192] [INFO] [django.server:213] "GET /users/image_codes/280268e2-6597-49b2-9d34-4b292eb1436f/ HTTP/1.1" 200 516
+[2025-11-26 07:25:53,489] [INFO] [django.server:213] "GET /users/image_codes/252f26a4-f8b8-4ed5-b6cd-dde34fa0ef78/ HTTP/1.1" 200 602
+[2025-11-26 07:25:53,633] [INFO] [django.server:213] "GET /users/image_codes/14e98b4d-def6-403f-a1cf-852ad00b067e/ HTTP/1.1" 200 609
+[2025-11-26 07:25:53,787] [INFO] [django.server:213] "GET /users/image_codes/bf921bfe-e3bb-45fe-921c-8b1e99c29a41/ HTTP/1.1" 200 760
+[2025-11-26 07:25:53,958] [INFO] [django.server:213] "GET /users/image_codes/585daf09-25e1-4053-b89a-f2122c995e22/ HTTP/1.1" 200 500
+[2025-11-26 07:25:54,429] [INFO] [django.server:213] "GET /users/image_codes/540eb77a-c737-47bd-9587-f6695fea3323/ HTTP/1.1" 200 671
+[2025-11-26 08:35:06,402] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-26 08:35:06,881] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 08:35:34,326] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-26 08:35:34,800] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 08:55:57,128] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-26 08:55:57,604] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 08:56:29,359] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-11-26 08:56:29,811] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 08:56:46,335] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/urls.py changed, reloading.
+[2025-11-26 08:56:46,780] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 08:56:53,008] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/urls.py changed, reloading.
+[2025-11-26 08:56:53,501] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 08:58:04,910] [ERROR] [django.server:213] "GET /users/image_codes/b6017de0-6078-4321-85f5-08108e436cd7/ HTTP/1.1" 500 75095
+[2025-11-26 08:58:05,649] [ERROR] [django.server:213] "GET /users/image_codes/aa3acbab-8cba-4293-ba13-283111fb547d/ HTTP/1.1" 500 75095
+[2025-11-26 08:58:06,087] [ERROR] [django.server:213] "GET /users/image_codes/530c19d6-91d5-4786-8202-258024526abe/ HTTP/1.1" 500 75095
+[2025-11-26 08:58:06,260] [ERROR] [django.server:213] "GET /users/image_codes/d23a544e-d391-416a-b4d7-3d17bef47cf0/ HTTP/1.1" 500 75095
+[2025-11-26 08:58:06,707] [ERROR] [django.server:213] "GET /users/image_codes/ee48cd5e-3cdf-459e-a7c3-37284de4e8c1/ HTTP/1.1" 500 75095
+[2025-11-26 08:58:30,316] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 08:58:30,734] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 08:58:36,955] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 08:58:37,337] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-26 08:58:41,967] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6654
+[2025-11-26 08:58:41,997] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-11-26 08:58:41,999] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-11-26 08:58:42,000] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-11-26 08:58:42,001] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-11-26 08:58:42,007] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-11-26 08:58:42,009] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-11-26 08:58:42,015] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-11-26 08:58:42,017] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 200 8724
+[2025-11-26 08:58:42,023] [INFO] [django.server:213] "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+[2025-11-26 08:58:42,029] [INFO] [django.server:213] "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+[2025-11-26 08:58:42,031] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-11-26 08:58:42,088] [ERROR] [django.server:213] "GET /users/image_codes/73542104-b58d-4b57-98f7-063d5e6122e8/ HTTP/1.1" 500 75360
+[2025-11-26 08:58:43,288] [ERROR] [django.server:213] "GET /users/image_codes/9e183bdb-5056-4d09-99b0-8f4d827c83f6/ HTTP/1.1" 500 75095
+[2025-11-26 08:58:43,755] [ERROR] [django.server:213] "GET /users/image_codes/750bb290-bffd-455d-8b53-9239947392d4/ HTTP/1.1" 500 75095
+[2025-11-26 08:58:43,904] [ERROR] [django.server:213] "GET /users/image_codes/2a3e9ee7-f698-4af9-b55f-d0f0e4aadceb/ HTTP/1.1" 500 75095
+[2025-11-26 08:58:44,392] [ERROR] [django.server:213] "GET /users/image_codes/cb28edff-eb6a-4f77-b33a-ad2fe33f9542/ HTTP/1.1" 500 75095
+[2025-11-26 08:58:44,559] [ERROR] [django.server:213] "GET /users/image_codes/d71dc2bd-9cc6-493e-9607-98567690afa1/ HTTP/1.1" 500 75095
+[2025-11-26 08:58:44,727] [ERROR] [django.server:213] "GET /users/image_codes/fb28569d-1af2-41ea-b6dd-6cd25d09095f/ HTTP/1.1" 500 75095
+[2025-11-26 08:58:44,895] [ERROR] [django.server:213] "GET /users/image_codes/6b976d82-16be-4207-ad24-2a079b50148a/ HTTP/1.1" 500 75095
+[2025-11-26 08:58:45,070] [ERROR] [django.server:213] "GET /users/image_codes/4900d4cf-d707-4487-a0ef-508bb732552d/ HTTP/1.1" 500 75095
+[2025-11-26 08:59:05,105] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-11-26 08:59:05,575] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
