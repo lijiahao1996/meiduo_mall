@@ -216,7 +216,7 @@ class Captcha(object):
         image.save(out, format=fmt)
         if path:
             image.save(os.path.join(path, name), fmt)
-        return name, text, out.getvalue()
+        return text, out.getvalue()
 
     def generate_captcha(self):
         self.initialize()

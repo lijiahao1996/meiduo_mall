@@ -184,59 +184,87 @@ var vm = new Vue({
         send_sms_code: function () {
 
             if (this.sending_flag == true) return;
-
             this.sending_flag = true;
 
-            // 输入校验
+            // 1. 输入基本校验
             this.check_mobile();
             this.check_image_code();
+
             if (this.error_mobile || this.error_image_code) {
                 this.sending_flag = false;
                 return;
             }
 
-            // 构造短信验证码 API URL
-            var url = this.host + '/sms_codes/' + this.mobile +
-                      '/?image_code=' + this.image_code +
-                      '&image_code_id=' + this.image_code_id;
+            // 2. 构造 URL
+            var url = this.host + '/users/sms_codes/' + this.mobile +
+                '/?image_code=' + this.image_code +
+                '&image_code_id=' + this.image_code_id;
 
-            // 发送请求
-            axios.get(url, {
-                responseType: 'json'
-            })
+            console.log("短信请求URL:", url);
+
+            // 3. 发请求
+            axios.get(url, { responseType: 'json' })
                 .then(response => {
-                    // 成功
-                    if (response.data.code == '0') {
-                        var num = 60;
-                        var t = setInterval(() => {
-                            if (num == 1) {
-                                clearInterval(t);
-                                this.sms_code_tip = '获取短信验证码';
-                                this.sending_flag = false;
-                            } else {
+
+                    let code = response.data.code;
+
+                    switch (code) {
+                        case '0':   // ======= 成功 =======
+                            console.log("短信发送成功：", response.data);
+
+                            // 刷新图形验证码（更安全）
+                            this.generate_image_code();
+
+                            // 开始倒计时
+                            var num = 60;
+                            this.sms_code_tip = num + '秒';
+
+                            var timer = setInterval(() => {
                                 num -= 1;
-                                this.sms_code_tip = num + '秒';
-                            }
-                        }, 1000);
-                    }
-                    // 后端错误
-                    else {
-                        if (response.data.code == '4001') {
+                                if (num <= 0) {
+                                    clearInterval(timer);
+                                    this.sms_code_tip = '获取短信验证码';
+                                    this.sending_flag = false;
+                                } else {
+                                    this.sms_code_tip = num + '秒';
+                                }
+                            }, 1000);
+
+                            break;
+
+                        case '4001':   // 图形验证码错误
+                        case '4003':   // 参数缺失
                             this.error_image_code_message = response.data.errmsg;
                             this.error_image_code = true;
-                        } else {
-                            this.error_sms_code_message = response.data.errmsg;
+                            this.generate_image_code();
+                            this.sending_flag = false;
+                            break;
+
+                        case '4002':   // 发送频率限制
+                            this.error_sms_code_message = "发送过于频繁，请稍后再试";
                             this.error_sms_code = true;
-                        }
-                        this.generate_image_code();
-                        this.sending_flag = false;
+                            this.sending_flag = false;
+                            break;
+
+                        default:   // 其它后端异常
+                            this.error_sms_code_message = response.data.errmsg || "短信发送失败";
+                            this.error_sms_code = true;
+                            this.sending_flag = false;
                     }
+
                 })
                 .catch(error => {
-                    console.log(error.response);
+                    console.log("短信请求异常：", error);
+
+                    this.error_sms_code_message = "网络异常，请稍后重试";
+                    this.error_sms_code = true;
                     this.sending_flag = false;
+
+                    // 强制刷新验证码防止漏洞
+                    this.generate_image_code();
                 });
         },
+
 
         // 表单提交前最终校验
         on_submit(){

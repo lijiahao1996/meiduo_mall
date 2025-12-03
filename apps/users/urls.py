@@ -1,6 +1,8 @@
 from django.urls import path
 from .views import RegisterView, UsernameCountView, LoginView, LogoutView, UserCenterInfoView
 from apps.users.views import ImageCodeView
+from .views import SmsCodeView
+
 
 app_name = "users"
 
@@ -16,6 +18,9 @@ urlpatterns = [
 
     # ===== 图形验证码 =====
     path("image_codes/<uuid:uuid>/", ImageCodeView.as_view(), name="image_code"),
+
+    # ===== 短信验证码 =====
+    path('sms_codes/<mobile>/', SmsCodeView.as_view()),
 
 ]
 

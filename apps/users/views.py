@@ -14,6 +14,7 @@ from apps.users.models import User
 logger = logging.getLogger("django")
 
 
+
 # ============================================================
 # 用户注册
 # ============================================================
@@ -79,18 +80,40 @@ class RegisterView(View):
             return http.HttpResponseBadRequest("手机号已被注册")
 
 
-        # 图形验证码校验
-        image_code = request.POST.get("pic_code")
-        image_code_id = request.POST.get("image_code_id")  # 你需要在前端传入此字段
+        # # 图形验证码校验
+        # image_code = request.POST.get("pic_code")
+        # image_code_id = request.POST.get("image_code_id")  # 你需要在前端传入此字段
+        #
+        # redis_conn = get_redis_connection("verify_codes")
+        # real_image_code = redis_conn.get(f"img_{image_code_id}")
+        #
+        # if real_image_code is None:
+        #     return http.HttpResponseBadRequest("验证码已过期")
+        #
+        # if real_image_code.decode().lower() != image_code.lower():
+        #     return http.HttpResponseBadRequest("验证码错误")
 
+
+        # 获取用户填写的短信验证码
+        sms_code_client = request.POST.get("sms_code")
+
+        # 判断是否填写
+        if not sms_code_client:
+            return http.HttpResponseBadRequest("请填写短信验证码")
+
+        # 从 redis 读取
         redis_conn = get_redis_connection("verify_codes")
-        real_image_code = redis_conn.get(f"img_{image_code_id}")
+        sms_code_server = redis_conn.get(f"sms_{mobile}")
 
-        if real_image_code is None:
-            return http.HttpResponseBadRequest("验证码已过期")
+        if sms_code_server is None:
+            return http.HttpResponseBadRequest("短信验证码已过期")
 
-        if real_image_code.decode().lower() != image_code.lower():
-            return http.HttpResponseBadRequest("验证码错误")
+        # 对比
+        if sms_code_client != sms_code_server.decode():
+            return http.HttpResponseBadRequest("短信验证码错误")
+
+        # 校验成功 → 删除 redis 验证码（防止重复使用）
+        redis_conn.delete(f"sms_{mobile}")
 
 
         # 8. 入库：create_user 会自动把密码加密
@@ -132,10 +155,14 @@ class UsernameCountView(View):
 # ============================================================
 # 图片验证码
 # ============================================================
+
 from django.http import HttpResponse, JsonResponse
 from django_redis import get_redis_connection
 from libs.captcha.captcha import captcha
 
+
+# 过期时间
+IMAGE_CODE_EXPIRE_TIME = 120   # 图形验证码 120 秒
 
 class ImageCodeView(View):
     """
@@ -145,16 +172,78 @@ class ImageCodeView(View):
 
     def get(self, request, uuid):
         # 生成验证码 (name, text, image)
-        name, text, image_data = captcha.generate_captcha()
+        text, image_data = captcha.generate_captcha()
 
         # 存 Redis
         redis_conn = get_redis_connection("verify_codes")
-        redis_conn.setex(f"img_{uuid}", 300, text)
+        redis_conn.setex(f"img_{uuid}", IMAGE_CODE_EXPIRE_TIME, text)
 
         # 返回图片
         return HttpResponse(image_data, content_type="image/jpeg")
 
 
+# ============================================================
+# 短信验证码
+# ============================================================
+from django.views import View
+from django import http
+from random import randint
+
+
+SMS_CODE_EXPIRE_TIME = 300     # 短信验证码 300 秒
+SMS_FLAG_EXPIRE_TIME = 60      # 发送频率标记 60 秒
+
+
+class SmsCodeView(View):
+    """
+    发送短信验证码
+    URL: /sms_codes/<mobile>/?image_code=xxx&image_code_id=uuid
+    """
+
+    def get(self, request, mobile):
+        # 1. 接收参数
+        image_code = request.GET.get("image_code")
+        image_code_id = request.GET.get("image_code_id")
+
+        if not all([mobile, image_code, image_code_id]):
+            return http.JsonResponse({"code": "4003", "errmsg": "缺少参数"})
+
+        # 2. 取 Redis 图片验证码
+        redis_conn = get_redis_connection("verify_codes")
+        redis_key = f"img_{image_code_id}"
+        real_image_code = redis_conn.get(redis_key)
+
+        if real_image_code is None:
+            return http.JsonResponse({"code": "4001", "errmsg": "验证码已过期"})
+
+        # 用完删除
+        redis_conn.delete(redis_key)
+
+        # 校验（忽略大小写）
+        if real_image_code.decode().lower() != image_code.lower():
+            return http.JsonResponse({"code": "4001", "errmsg": "验证码错误"})
+
+        # 3. 发送频率控制：60秒
+        send_flag = redis_conn.get(f"send_flag_{mobile}")
+        if send_flag:
+            return http.JsonResponse({"code": "4002", "errmsg": "请勿频繁发送短信"})
+
+        # 4. 生成短信验证码
+        sms_code = "%04d" % randint(0, 9999)
+        logger.info(f"{mobile} 的短信验证码是：{sms_code}")
+
+        # 5. Redis 管道一次性写入
+        pl = redis_conn.pipeline()
+        pl.setex(f"sms_{mobile}", SMS_CODE_EXPIRE_TIME, sms_code)
+        pl.setex(f"send_flag_{mobile}", SMS_FLAG_EXPIRE_TIME, 1)
+        pl.execute()
+
+        # 6. Celery 异步发送短信
+        from celery_tasks.sms.tasks import send_sms_code
+        send_sms_code.delay(mobile, sms_code)
+
+        # 7. 返回成功
+        return http.JsonResponse({"code": "0", "errmsg": "短信发送成功"})
 
 
 
@@ -178,32 +267,40 @@ class LoginView(View):
         if not all([username, password]):
             return http.HttpResponseBadRequest("缺少必要参数")
 
-        # 3. 用户名格式检查
+        # 3. 用户名格式检查（先按课程来，只支持用户名登录）
         if not re.match(r"^[a-zA-Z0-9_-]{5,20}$", username):
             return http.HttpResponseBadRequest("用户名格式不正确")
 
-        # 4. 密码无需正则，可自由（但也可加）
-
-        # 5. Django 内置认证：用户名 + 密码
+        # 4. 使用 Django 内置认证
         user = authenticate(username=username, password=password)
 
         if user is None:
+            # 认证失败，返回登录页并带错误信息
             return render(request, "users/login.html", {"account_errmsg": "用户名或密码错误"})
 
-        # 6. 登录成功：写 session
+        # 5. 登录成功：写 session
         login(request, user)
 
-        # 7. 设置 session 过期时间
+        # 6. 设置 session 过期时间
         if remembered == "on":
             request.session.set_expiry(30 * 24 * 3600)   # 30 天
         else:
-            request.session.set_expiry(0)                # 浏览器关闭即失效
+            request.session.set_expiry(0)                # 关闭浏览器失效
+
+        # 7. 处理 next 参数（从登录拦截回来时会带上）
+        next_url = request.GET.get("next")
+        if next_url:
+            resp = redirect(next_url)
+        else:
+            resp = redirect(reverse("contents:index"))
 
         # 8. 设置 cookie，用于首页展示用户名
-        resp = redirect(reverse("contents:index"))
         resp.set_cookie("username", user.username, max_age=14 * 24 * 3600)
 
+        # print("username=", username, "password=", password, "remembered=", remembered)
+
         return resp
+
 
 
 # ============================================================
