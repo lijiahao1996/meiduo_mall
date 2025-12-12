@@ -1,0 +1,29 @@
+[2025-12-10 17:22:08,407] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-12-10 17:28:12,277] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-12-10 17:36:09,997] [INFO] [meiduo:15] 访问首页
+[2025-12-10 17:36:10,069] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30258
+[2025-12-10 17:36:10,342] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-12-10 17:36:10,343] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-12-10 17:36:10,344] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-12-10 17:36:10,346] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-12-10 17:36:10,349] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-12-10 17:36:10,351] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-12-10 17:36:11,089] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2770
+[2025-12-10 17:36:11,560] [WARNING] [django.server:213] "GET /favicon.ico HTTP/1.1" 404 2758
+[2025-12-10 17:36:21,309] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 4829
+[2025-12-10 17:36:21,349] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 200 2449
+[2025-12-10 17:36:21,351] [INFO] [django.server:213] "GET /static/images/logo02.png HTTP/1.1" 200 8466
+[2025-12-10 17:36:21,434] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-12-10 17:36:21,440] [INFO] [django.server:213] "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+[2025-12-10 17:36:21,470] [INFO] [django.server:213] "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+[2025-12-10 17:36:23,254] [INFO] [django.server:213] "GET /oauth/qq/login/?next=%2F HTTP/1.1" 200 172
+[2025-12-10 17:36:25,228] [INFO] [django.server:213] "GET /oauth/qq/login/?next=%2F HTTP/1.1" 200 172
+[2025-12-10 17:36:34,604] [INFO] [django.server:213] "GET /oauth/qq/login/?next=%2F HTTP/1.1" 200 172
+[2025-12-10 17:36:35,382] [INFO] [django.server:213] "GET /oauth/qq/login/?next=%2F HTTP/1.1" 200 172
+[2025-12-10 17:36:35,828] [INFO] [django.server:213] "GET /oauth/qq/login/?next=%2F HTTP/1.1" 200 172
+[2025-12-10 17:36:52,196] [INFO] [django.server:213] "GET /oauth/qq/login/?next=%2F HTTP/1.1" 200 172
+[2025-12-10 17:37:09,829] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 4829
+[2025-12-10 17:37:09,894] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 304 0
+[2025-12-10 17:37:09,904] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 200 2449
+[2025-12-10 17:37:10,226] [WARNING] [django.server:213] "GET /favicon.ico HTTP/1.1" 404 2764
+[2025-12-10 17:37:11,694] [INFO] [django.server:213] "GET /oauth/qq/login/?next=%2F HTTP/1.1" 200 172

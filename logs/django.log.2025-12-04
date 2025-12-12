@@ -1,0 +1,174 @@
+[2025-12-04 16:38:20,424] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+[2025-12-04 16:38:21,607] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-12-04 16:39:20,195] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/settings.py changed, reloading.
+[2025-12-04 16:39:20,785] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-12-04 16:39:54,865] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py changed, reloading.
+[2025-12-04 16:39:55,509] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-12-04 16:40:11,239] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-12-04 16:45:01,298] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-12-04 16:46:34,268] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-12-04 16:46:58,934] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 4678
+[2025-12-04 16:46:58,963] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 304 0
+[2025-12-04 16:46:58,976] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 200 2294
+[2025-12-04 16:47:14,088] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 302 0
+[2025-12-04 16:47:14,097] [INFO] [meiduo:15] 访问首页
+[2025-12-04 16:47:14,102] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-12-04 16:47:14,270] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-12-04 16:48:39,137] [WARNING] [django.security.csrf:253] Forbidden (CSRF token from POST incorrect.): /users/login/
+[2025-12-04 16:48:39,138] [WARNING] [django.server:213] "POST /users/login/ HTTP/1.1" 403 2503
+[2025-12-04 16:48:41,525] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 4678
+[2025-12-04 16:48:51,826] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 4678
+[2025-12-04 16:48:51,862] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-12-04 16:48:51,873] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-12-04 16:48:51,883] [INFO] [django.server:213] "GET /static/images/logo02.png HTTP/1.1" 200 8466
+[2025-12-04 16:48:51,884] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-12-04 16:48:51,885] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-12-04 16:48:51,887] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-12-04 16:48:51,894] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 200 2294
+[2025-12-04 16:48:51,902] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-12-04 16:48:51,944] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-12-04 16:48:51,946] [INFO] [django.server:213] "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+[2025-12-04 16:48:51,953] [INFO] [django.server:213] "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+[2025-12-04 16:48:58,652] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 4852
+[2025-12-04 16:49:17,372] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 302 0
+[2025-12-04 16:49:17,380] [INFO] [meiduo:15] 访问首页
+[2025-12-04 16:49:17,381] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-12-04 16:49:17,412] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-12-04 16:49:17,419] [INFO] [django.server:213] "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+[2025-12-04 16:49:17,421] [INFO] [django.server:213] "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+[2025-12-04 16:49:17,448] [INFO] [django.server:213] "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+[2025-12-04 16:49:17,470] [INFO] [django.server:213] "GET /static/js/index.js HTTP/1.1" 200 1388
+[2025-12-04 16:49:17,471] [INFO] [django.server:213] "GET /static/js/slide.js HTTP/1.1" 200 1822
+[2025-12-04 16:49:17,560] [INFO] [django.server:213] "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+[2025-12-04 16:49:17,562] [INFO] [django.server:213] "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+[2025-12-04 16:49:17,571] [INFO] [django.server:213] "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+[2025-12-04 16:49:17,583] [INFO] [django.server:213] "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+[2025-12-04 16:49:17,602] [INFO] [django.server:213] "GET /static/images/icons.png HTTP/1.1" 200 7740
+[2025-12-04 16:49:17,606] [INFO] [django.server:213] "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+[2025-12-04 16:49:17,612] [INFO] [django.server:213] "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+[2025-12-04 16:49:17,621] [INFO] [django.server:213] "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+[2025-12-04 16:49:17,642] [INFO] [django.server:213] "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+[2025-12-04 16:49:17,643] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-12-04 16:49:17,655] [INFO] [django.server:213] "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+[2025-12-04 16:49:17,656] [INFO] [django.server:213] "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+[2025-12-04 16:49:17,662] [INFO] [django.server:213] "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+[2025-12-04 16:49:17,666] [INFO] [django.server:213] "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+[2025-12-04 16:49:17,669] [INFO] [django.server:213] "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+[2025-12-04 16:49:37,676] [WARNING] [django.security.csrf:253] Forbidden (CSRF cookie not set.): /users/login/
+[2025-12-04 16:49:37,677] [WARNING] [django.server:213] "POST /users/login/ HTTP/1.1" 403 2855
+[2025-12-04 16:49:54,669] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 4678
+[2025-12-04 16:49:54,700] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-12-04 16:49:54,724] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-12-04 16:49:54,727] [INFO] [django.server:213] "GET /static/images/logo02.png HTTP/1.1" 200 8466
+[2025-12-04 16:49:54,727] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-12-04 16:49:54,735] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-12-04 16:49:54,737] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-12-04 16:49:54,740] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 200 2294
+[2025-12-04 16:49:54,746] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-12-04 16:49:54,798] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-12-04 16:49:54,802] [INFO] [django.server:213] "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+[2025-12-04 16:49:54,810] [INFO] [django.server:213] "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+[2025-12-04 17:04:40,225] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 4852
+[2025-12-04 17:04:40,257] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 304 0
+[2025-12-04 17:04:50,792] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 4852
+[2025-12-04 17:08:50,271] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5159
+[2025-12-04 17:08:50,297] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 304 0
+[2025-12-04 17:08:57,406] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5159
+[2025-12-04 17:11:41,098] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5217
+[2025-12-04 17:11:41,122] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 304 0
+[2025-12-04 17:12:20,108] [WARNING] [django.security.csrf:253] Forbidden (CSRF cookie not set.): /users/login/
+[2025-12-04 17:12:20,109] [WARNING] [django.server:213] "POST /users/login/ HTTP/1.1" 403 2855
+[2025-12-04 17:12:23,585] [WARNING] [django.security.csrf:253] Forbidden (CSRF cookie not set.): /users/login/
+[2025-12-04 17:12:23,585] [WARNING] [django.server:213] "POST /users/login/ HTTP/1.1" 403 2855
+[2025-12-04 17:12:29,802] [INFO] [django.server:213] code 400, message Bad request syntax ('\x16\x03\x01\x07\x18\x01\x00\x07\x14\x03\x03\x89\x85')
+[2025-12-04 17:12:29,802] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-12-04 17:12:29,814] [INFO] [django.server:213] code 400, message Bad request version (')ã\x9cÂÕ\x9b¤ãxÈae³É\x9a´1\x9a}×\x919')
+[2025-12-04 17:12:29,814] [ERROR] [django.server:193] You're accessing the development server over HTTPS, but it only supports HTTP.
+[2025-12-04 17:12:31,962] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 4842
+[2025-12-04 17:12:31,993] [INFO] [django.server:213] "GET /static/css/reset.css HTTP/1.1" 200 638
+[2025-12-04 17:12:32,017] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 200 42
+[2025-12-04 17:12:32,021] [INFO] [django.server:213] "GET /static/js/common.js HTTP/1.1" 200 891
+[2025-12-04 17:12:32,023] [INFO] [django.server:213] "GET /static/css/main.css HTTP/1.1" 200 39722
+[2025-12-04 17:12:32,028] [INFO] [django.server:213] "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+[2025-12-04 17:12:32,029] [INFO] [django.server:213] "GET /static/images/logo02.png HTTP/1.1" 200 8466
+[2025-12-04 17:12:32,040] [INFO] [django.server:213] "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+[2025-12-04 17:12:32,042] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 200 2294
+[2025-12-04 17:12:32,090] [INFO] [django.server:213] "GET /static/images/icons02.png HTTP/1.1" 200 3935
+[2025-12-04 17:12:32,093] [INFO] [django.server:213] "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+[2025-12-04 17:12:32,118] [INFO] [django.server:213] "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+[2025-12-04 17:12:37,957] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5217
+[2025-12-04 17:12:44,498] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5217
+[2025-12-04 17:12:50,155] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5217
+[2025-12-04 17:13:44,932] [WARNING] [django.security.csrf:253] Forbidden (CSRF cookie not set.): /users/login/
+[2025-12-04 17:13:44,933] [WARNING] [django.server:213] "POST /users/login/ HTTP/1.1" 403 2855
+[2025-12-04 17:14:07,370] [WARNING] [django.security.csrf:253] Forbidden (CSRF cookie not set.): /users/login/
+[2025-12-04 17:14:07,371] [WARNING] [django.server:213] "POST /users/login/ HTTP/1.1" 403 2855
+[2025-12-04 17:14:18,869] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5217
+[2025-12-04 17:14:34,963] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5275
+[2025-12-04 17:14:42,858] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5275
+[2025-12-04 17:14:53,176] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5275
+[2025-12-04 17:15:25,516] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 4852
+[2025-12-04 17:15:35,602] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 4852
+[2025-12-04 17:15:35,626] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 304 0
+[2025-12-04 17:23:19,880] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5204
+[2025-12-04 17:23:19,905] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 304 0
+[2025-12-04 17:23:29,044] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5204
+[2025-12-04 17:28:13,930] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5229
+[2025-12-04 17:28:13,949] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 304 0
+[2025-12-04 17:28:19,303] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 4829
+[2025-12-04 17:28:24,291] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5229
+[2025-12-04 17:28:29,421] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 200 5229
+[2025-12-04 17:46:58,257] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 302 0
+[2025-12-04 17:46:58,265] [INFO] [meiduo:15] 访问首页
+[2025-12-04 17:46:58,265] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-12-04 17:46:58,284] [INFO] [django.server:213] "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+[2025-12-04 17:46:58,296] [INFO] [django.server:213] "GET /static/images/logo.png HTTP/1.1" 200 7450
+[2025-12-04 17:46:58,299] [INFO] [django.server:213] "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+[2025-12-04 17:46:58,306] [INFO] [django.server:213] "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+[2025-12-04 17:46:58,335] [INFO] [django.server:213] "GET /static/js/slide.js HTTP/1.1" 200 1822
+[2025-12-04 17:46:58,340] [INFO] [django.server:213] "GET /static/js/index.js HTTP/1.1" 200 1388
+[2025-12-04 17:46:58,341] [INFO] [django.server:213] "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+[2025-12-04 17:46:58,362] [INFO] [django.server:213] "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+[2025-12-04 17:46:58,401] [INFO] [django.server:213] "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+[2025-12-04 17:46:58,404] [INFO] [django.server:213] "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+[2025-12-04 17:46:58,404] [INFO] [django.server:213] "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+[2025-12-04 17:46:58,412] [INFO] [django.server:213] "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+[2025-12-04 17:46:58,414] [INFO] [django.server:213] "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+[2025-12-04 17:46:58,416] [INFO] [django.server:213] "GET /static/images/icons.png HTTP/1.1" 200 7740
+[2025-12-04 17:46:58,430] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-12-04 17:46:58,437] [INFO] [django.server:213] "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+[2025-12-04 17:46:58,437] [INFO] [django.server:213] "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+[2025-12-04 17:46:58,445] [INFO] [django.server:213] "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+[2025-12-04 17:46:58,450] [INFO] [django.server:213] "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+[2025-12-04 17:46:58,453] [INFO] [django.server:213] "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+[2025-12-04 17:46:58,453] [INFO] [django.server:213] "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+[2025-12-04 17:47:08,764] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 4829
+[2025-12-04 17:47:08,810] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 304 0
+[2025-12-04 17:47:36,731] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 302 0
+[2025-12-04 17:47:36,738] [INFO] [meiduo:15] 访问首页
+[2025-12-04 17:47:36,738] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-12-04 17:47:36,820] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-12-04 17:51:18,477] [WARNING] [django.security.csrf:253] Forbidden (CSRF token from POST incorrect.): /users/login/
+[2025-12-04 17:51:18,478] [WARNING] [django.server:213] "POST /users/login/ HTTP/1.1" 403 2503
+[2025-12-04 17:51:26,914] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 4829
+[2025-12-04 17:51:34,281] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 302 0
+[2025-12-04 17:51:34,288] [INFO] [meiduo:15] 访问首页
+[2025-12-04 17:51:34,289] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-12-04 17:51:34,436] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-12-04 17:53:14,931] [WARNING] [django.security.csrf:253] Forbidden (CSRF token from POST incorrect.): /users/login/
+[2025-12-04 17:53:14,932] [WARNING] [django.server:213] "POST /users/login/ HTTP/1.1" 403 2503
+[2025-12-04 17:53:24,635] [INFO] [django.server:213] "GET /users/login/ HTTP/1.1" 200 4829
+[2025-12-04 17:53:31,715] [INFO] [django.server:213] "POST /users/login/ HTTP/1.1" 302 0
+[2025-12-04 17:53:31,722] [INFO] [meiduo:15] 访问首页
+[2025-12-04 17:53:31,723] [INFO] [django.server:213] "GET / HTTP/1.1" 200 30179
+[2025-12-04 17:53:31,899] [WARNING] [django.server:213] "GET /carts/simple/ HTTP/1.1" 404 2621
+[2025-12-04 18:11:09,912] [INFO] [django.server:213] "GET /static/login.html HTTP/1.1" 200 2707
+[2025-12-04 18:11:09,960] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 304 0
+[2025-12-04 18:22:11,876] [INFO] [django.server:213] "GET /static/js/login.js HTTP/1.1" 304 0
+[2025-12-04 18:22:12,019] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-12-04 18:22:17,886] [WARNING] [django.server:213] "GET /users/register.html HTTP/1.1" 404 4379
+[2025-12-04 18:22:22,058] [WARNING] [django.server:213] "GET /static/js/axios.min.map HTTP/1.1" 404 1868
+[2025-12-04 18:48:06,847] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-12-04 18:48:07,604] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-12-04 18:48:13,133] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+[2025-12-04 18:48:14,049] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader

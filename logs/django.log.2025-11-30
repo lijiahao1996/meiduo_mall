@@ -1,0 +1,33 @@
+[2025-11-30 08:03:23,424] [INFO] [django.server:213] "GET /users/image_codes/1c2e969e-aa7d-4083-9060-71f18c866b63/ HTTP/1.1" 200 3053
+[2025-11-30 08:03:23,581] [INFO] [django.server:213] "GET /users/image_codes/e08d064b-afcd-49eb-847e-9def957fad57/ HTTP/1.1" 200 2904
+[2025-11-30 08:03:23,711] [INFO] [django.server:213] "GET /users/image_codes/104e73f1-a11f-4db0-90cd-89442bfbb263/ HTTP/1.1" 200 3105
+[2025-11-30 08:03:24,589] [INFO] [django.server:213] "GET /users/image_codes/a3d2fe11-a363-4012-b135-09ed92bc1cda/ HTTP/1.1" 200 2980
+[2025-11-30 08:03:25,104] [INFO] [django.server:213] "GET /users/image_codes/be9b5cf2-0cbf-458d-b012-f4d987d2d816/ HTTP/1.1" 200 2849
+[2025-11-30 08:03:25,267] [INFO] [django.server:213] "GET /users/image_codes/a7c6bc6d-0d93-45b3-b8b7-8a9067b9a0e0/ HTTP/1.1" 200 3085
+[2025-11-30 08:03:25,399] [INFO] [django.server:213] "GET /users/image_codes/5419320b-0f2e-400c-8ea9-1be9407a742d/ HTTP/1.1" 200 3017
+[2025-11-30 08:03:25,527] [INFO] [django.server:213] "GET /users/image_codes/4352e14b-d060-4dd2-a67e-6df9afbebbfa/ HTTP/1.1" 200 2928
+[2025-11-30 08:03:25,654] [INFO] [django.server:213] "GET /users/image_codes/07093cc0-7a2e-4eec-aa3d-aaad0e8314a0/ HTTP/1.1" 200 3211
+[2025-11-30 08:03:25,798] [INFO] [django.server:213] "GET /users/image_codes/fe6a4730-a325-4907-a85e-685e104ec1b0/ HTTP/1.1" 200 2897
+[2025-11-30 08:03:25,927] [INFO] [django.server:213] "GET /users/image_codes/18e0297b-10ab-499d-a455-dfe28659dde6/ HTTP/1.1" 200 2904
+[2025-11-30 08:03:26,055] [INFO] [django.server:213] "GET /users/image_codes/db0d6149-7d0f-4d20-9045-8603c8cac41c/ HTTP/1.1" 200 3055
+[2025-11-30 08:03:26,200] [INFO] [django.server:213] "GET /users/image_codes/40617d81-4553-4a11-b20e-e8323e493a63/ HTTP/1.1" 200 2973
+[2025-11-30 08:03:26,373] [INFO] [django.server:213] "GET /users/image_codes/9cbb45ce-f980-42cd-9bf5-e45048fd85fc/ HTTP/1.1" 200 3215
+[2025-11-30 08:04:10,936] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/sms/ronglian.py changed, reloading.
+[2025-11-30 08:04:11,998] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-30 08:05:14,033] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/libs/sms/ronglian.py changed, reloading.
+[2025-11-30 08:05:14,891] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-30 08:13:00,692] [INFO] [django.utils.autoreload:265] /Users/lijiahao/git-test/meiduo_test/meiduo_mall/celery_tasks/sms/tasks.py changed, reloading.
+[2025-11-30 08:13:02,291] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-30 09:35:31,591] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-30 09:35:42,482] [INFO] [django.utils.autoreload:667] Watching for file changes with StatReloader
+[2025-11-30 09:36:07,522] [INFO] [django.server:213] "GET /users/register/ HTTP/1.1" 200 6654
+[2025-11-30 09:36:07,558] [INFO] [django.server:213] "GET /static/js/host.js HTTP/1.1" 304 0
+[2025-11-30 09:36:07,567] [INFO] [django.server:213] "GET /static/js/register.js HTTP/1.1" 304 0
+[2025-11-30 09:36:07,671] [INFO] [django.server:213] "GET /users/image_codes/7ef18939-fb49-4fa7-907b-001c098a6573/ HTTP/1.1" 200 3525
+[2025-11-30 09:36:10,673] [INFO] [django.server:213] "GET /users/image_codes/968b3673-4f52-43c4-9e65-812f277c612f/ HTTP/1.1" 200 2759
+[2025-11-30 09:36:10,969] [INFO] [django.server:213] "GET /users/image_codes/97d0ef62-d75a-45a1-b27b-c497c416cb30/ HTTP/1.1" 200 2852
+[2025-11-30 09:36:11,232] [INFO] [django.server:213] "GET /users/image_codes/e868dc17-70e6-4b94-a480-9b6b7a199e9b/ HTTP/1.1" 200 2990
+[2025-11-30 09:36:11,362] [INFO] [django.server:213] "GET /users/image_codes/16b5e18b-0b8a-45b8-9509-1af7ffea885c/ HTTP/1.1" 200 2807
+[2025-12-03 03:39:31,052] [INFO] [meiduo:28] 短信发送 → 手机号=13021020077, 返回={'statusCode': '000000', 'templateSMS': {'smsMessageSid': '100582e476274ff7987af24543523f33', 'dateCreated': '20251203113931'}}
+[2025-12-03 03:41:04,299] [INFO] [meiduo:28] 短信发送 → 手机号=13021020077, 返回={'statusCode': '000000', 'templateSMS': {'smsMessageSid': 'cbd92c37960d472083316bc0f5c7d823', 'dateCreated': '20251203114104'}}
+[2025-12-03 03:42:19,566] [INFO] [meiduo:28] 短信发送 → 手机号=13021020077, 返回={'statusCode': '000000', 'templateSMS': {'smsMessageSid': 'cdbc86840c2b45bf8dc51464ccf5f388', 'dateCreated': '20251203114219'}}
