@@ -9,7 +9,7 @@ var vm = new Vue({
         f3_tab: 1, // 3F 标签页控制
         cart_total_count: 0, // 购物车总数量
         carts: [], // 购物车数据,
-        username:'',
+        username: username || '',
     },
     mounted(){
         // 获取购物车数据
@@ -36,6 +36,14 @@ var vm = new Vue({
                 })
                 .catch(error => {
                     console.log(error.response);
+                })
+        },
+            logout() {
+            axios.get('/users/logout/')
+                .then(response => {
+                    if (response.data.code === "0") {
+                        location.reload();   // 刷新页面，使 username 生效
+                    }
                 })
         }
     }

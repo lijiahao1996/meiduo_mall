@@ -32,7 +32,7 @@ let vm = new Vue({
 			// 生成一个编号 : 严格一点的使用uuid保证编号唯一， 不是很严谨的情况下，也可以使用时间戳
 			this.uuid = generateUUID();
 			// 设置页面中图形验证码img标签的src属性
-			this.image_code_url = "/image_codes/" + this.uuid + "/";
+			this.image_code_url = "/users/image_codes/" + this.uuid + "/";
 		},
 		// 检查手机号
 		check_mobile(){
@@ -88,7 +88,7 @@ let vm = new Vue({
 			}
 
 			// 向后端接口发送请求，让后端发送短信验证码
-			let url = '/sms_codes/' + this.mobile + '/?image_code=' + this.image_code+'&image_code_id='+ this.uuid;
+			let url = '/users/sms_codes/' + this.mobile + '/?image_code=' + this.image_code+'&image_code_id='+ this.uuid;
 			axios.get(url, {
 				responseType: 'json'
 			})

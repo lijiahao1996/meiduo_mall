@@ -267,9 +267,10 @@ class LoginView(View):
         if not all([username, password]):
             return http.HttpResponseBadRequest("缺少必要参数")
 
-        # 3. 用户名格式检查（先按课程来，只支持用户名登录）
-        if not re.match(r"^[a-zA-Z0-9_-]{5,20}$", username):
-            return http.HttpResponseBadRequest("用户名格式不正确")
+        # 用户名 或 手机号 格式校验
+        if not re.match(r'^[a-zA-Z0-9_-]{5,20}$', username) and \
+                not re.match(r'^1[3-9]\d{9}$', username):
+            return http.HttpResponseBadRequest("请输入正确的用户名或手机号")
 
         # 4. 使用 Django 内置认证
         user = authenticate(username=username, password=password)
@@ -304,8 +305,12 @@ class LoginView(View):
 
 
 # ============================================================
-# 用户退出
+# 用户退出登录
 # ============================================================
+from django.views import View
+from django.contrib.auth import logout
+from django.http import JsonResponse
+
 class LogoutView(View):
     """退出登录"""
 
@@ -336,3 +341,5 @@ class UserCenterInfoView(LoginRequiredMixin, View):
 
     def get(self, request):
         return render(request, "users/user_center_info.html")
+
+

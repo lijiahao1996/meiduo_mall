@@ -47,7 +47,7 @@
                             <input type="text"
                                    name="username"
                                    class="name_input"
-                                   placeholder="请输入用户名"
+                                   placeholder="请输入用户名或手机号"
                                    v-model="username"
                                    @blur="check_username">
 
@@ -57,12 +57,12 @@
                                 [[ error_username_message ]]
                             </div>
 
-                            <!-- 后端返回的账号错误（用户名或密码错误） -->
-                            {% if account_errmsg %}
-                            <div class="user_error">
-                                {{ account_errmsg }}
-                            </div>
-                            {% endif %}
+<!--                            &lt;!&ndash; 后端返回的账号错误（用户名或密码错误） &ndash;&gt;-->
+<!--                            {% if account_errmsg %}-->
+<!--                            <div class="user_error">-->
+<!--                                {{ account_errmsg }}-->
+<!--                            </div>-->
+<!--                            {% endif %}-->
 
                             <!-- 密码 -->
                             <input type="password"
@@ -72,6 +72,13 @@
                                    v-model="password"
                                    @blur="check_password">
 
+                            <!-- 后端返回的账号错误（用户名或密码错误） -->
+                            {% if account_errmsg %}
+                            <div class="pwd_error" v-show="!error_password">
+                                {{ account_errmsg }}
+                            </div>
+                            {% endif %}
+
                             <!-- 前端密码错误提示 -->
                             <div v-show="error_password"
                                  class="pwd_error">
@@ -79,7 +86,7 @@
                             </div>
 
                             <div class="more_input clearfix">
-                                <!-- 记住登录，勾选后提交值为 on -->
+                            <!-- 记住登录，勾选后提交值为 on -->
                                 <input type="checkbox"
                                        name="remembered"
                                        v-model="remembered">

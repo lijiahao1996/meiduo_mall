@@ -17,12 +17,14 @@ var vm = new Vue({
     methods: {
         // 检查账号
         check_username: function () {
-            var re = /^[a-zA-Z0-9_-]{5,20}$/;
-            if (re.test(this.username)) {
+            var re1 = /^[a-zA-Z0-9_-]{5,20}$/;  // 用户名
+            var re2 = /^1[3-9]\d{9}$/;          // 手机号
+
+            if (re1.test(this.username) || re2.test(this.username)) {
                 this.error_username = false;
             } else {
-                this.error_username_message = '用户名必须是5-20位字母、数字、下划线或 -';
                 this.error_username = true;
+                this.error_username_message = "请输入正确的用户名或手机号";
             }
         },
         // 检查密码
@@ -50,16 +52,17 @@ var vm = new Vue({
         // qq登录（暂时你后端没写可以先留着）
         qq_login: function () {
             var next = get_query_string('next') || '/';
-            var url = this.host + '/qq/login/?next=' + next;
+            // 注意：host 里一般配置的是 http://www.meiduo.site:8000 或 http://localhost:8000
+            var url = this.host + '/oauth/qq/login/?next=' + encodeURIComponent(next);
             axios.get(url, {
                 responseType: 'json'
             })
-            .then(response => {
-                location.href = response.data.login_url;
-            })
-            .catch(error => {
-                console.log(error.response);
-            });
+                .then(response => {
+                    location.href = response.data.login_url;
+                })
+                .catch(error => {
+                    console.log(error.response);
+                });
         }
     }
 });

@@ -11,7 +11,7 @@ urlpatterns = [
     path('register/', RegisterView.as_view(), name='register'),
     path('login/', LoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
-    path('info/', UserCenterInfoView.as_view(), name='info'),
+    path("center/", UserCenterInfoView.as_view(), name="center"),
 
     # 用户名重复检查（AJAX）
     path('usernames/<username>/count/', UsernameCountView.as_view(), name='username_count'),

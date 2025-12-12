@@ -10,25 +10,32 @@
 	<script type="text/javascript" src="../static/js/vue-2.5.16.js"></script>
     <script type="text/javascript" src="../static/js/axios-0.18.0.min.js"></script>
 	<script type="text/javascript" src="../static/js/jquery-1.12.4.min.js"></script>
+    <script>
+    	var username = "{{ request.user.username | default('') }}";
+    </script>
 </head>
+
 <body>
 	<div id="app" v-cloak>
 	<div class="header_con">
 		<div class="header">
 			<div class="welcome fl">欢迎来到美多商城!</div>
 			<div class="fr">
-				<div class="login_info fl">
-					欢迎您：<em>张 山</em>
-					<a href="javascript:;" class="quit">退出</a>
-				</div>
-				<div class="login_btn fl">
-					<a href="../static/login.html">登录</a>
+				<div class="login_btn fl" v-if="username">
+					欢迎您：<em>[[ username ]]</em>
 					<span>|</span>
-					<a href="users/register.html">注册</a>
+					<a href="{{ url('users:logout') }}" >退出</a>
 				</div>
+
+				<div class="login_btn fl" v-else>
+					<a href="{{ url('users:login') }}">登录</a>
+					<span>|</span>
+					<a href="{{ url('users:register') }}">注册</a>
+				</div>
+
 				<div class="user_link fl">
 					<span>|</span>
-					<a href="../static/user_center_info.html">用户中心</a>
+					<a href="users/user_center_info.html">用户中心</a>
 					<span>|</span>
 					<a href="../static/cart.html">我的购物车</a>
 					<span>|</span>

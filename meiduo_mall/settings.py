@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "www.meiduo.site",
     "meiduo.site",
+    "meiduo.ljh.cool"
 ]
 
 
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'apps.users.apps.UsersConfig',
     "celery_tasks",
+    "apps.oauth.apps.OauthConfig",
 ]
 
 MIDDLEWARE = [
@@ -204,6 +206,12 @@ RONG_LIAN = {
     "appId": "2c94811c9860a9c4019ac5ab8cab5ac8",
 }
 
+AUTHENTICATION_BACKENDS = [
+    'apps.users.utils.UsernameMobileModelBackend',
+]
+
+
+
 # -------- 日志模块 ----------
 LOG_DIR = os.path.join(BASE_DIR, "logs")
 if not os.path.exists(LOG_DIR):
@@ -280,12 +288,11 @@ LOGGING = {
     }
 }
 
-# # =========== Celery 配置 ===========
-# # 使用 Redis 作为 Celery broker（任务调度队列）
-# CELERY_BROKER_URL = "redis://127.0.0.1:6379/5"
-#
-# # Celery worker 执行结果存储（可不需要，但建议加上）
-# CELERY_RESULT_BACKEND = "redis://127.0.0.1:6379/6"
-#
-# # 时区与 Django 保持一致
-# CELERY_TIMEZONE = "Asia/Shanghai"
+
+LOGIN_URL = "/users/login/"
+
+# QQ 登录相关（使用你自己在 QQ 互联申请的 appid / appkey / 回调地址）
+QQ_CLIENT_ID = '102822214'
+QQ_CLIENT_SECRET = 'teDaidIiuqY5OSGv'
+# 注意：回调地址要和 QQ 平台配置一致，否则会报 redirect_uri mismatch
+QQ_REDIRECT_URI = 'http://127.0.0.1:8000/oauth/qq/callback'
