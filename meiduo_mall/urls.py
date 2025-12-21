@@ -34,5 +34,8 @@ urlpatterns = [
     path("", include(("apps.contents.urls", "contents"), namespace="contents")),
     # 新增：OAuth
     path("oauth/", include(("apps.oauth.urls", "oauth"), namespace="oauth")),
+
+    # 省市区模块
+    path("", include(("apps.areas.urls", "areas"), namespace="areas")),
 ]
 

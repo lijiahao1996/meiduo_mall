@@ -13,4 +13,5 @@ app.config_from_object("celery_tasks.celeryconfig")
 # 明确告诉 Celery 去扫描 celery_tasks/sms/tasks.py
 app.autodiscover_tasks([
     "celery_tasks.sms",
+    "celery_tasks.email",
 ])

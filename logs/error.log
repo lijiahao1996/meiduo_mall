@@ -1,42 +1,331 @@
-[2025-12-11 18:13:02,641] [ERROR] [django.request:253] Internal Server Error: /oauth/qq/callback
+[2025-12-20 22:18:56,339] [ERROR] [django.request:253] Internal Server Error: /users/center/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 42, in get_template
+    return Template(self.env.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/templates/users/user_center_info.html", line 67, in template
+    <li><a href="{% url 'users:addresses' %}">· 收货地址</a></li>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'url'.
+
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
   File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 122, in __call__
-    response = self.process_response(request, response)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 346, in get
+    return render(request, "users/user_center_info.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
-    return self.response_redirect_class(self.get_full_path_with_slash(request))
-                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
-    raise RuntimeError(
-RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/oauth/qq/callback/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
-[2025-12-11 18:20:21,466] [ERROR] [django.request:253] Internal Server Error: /oauth/qq/callback
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 48, in get_template
+    raise new from exc
+django.template.exceptions.TemplateSyntaxError: ("Encountered unknown tag 'url'.",)
+[2025-12-20 22:18:58,179] [ERROR] [django.request:253] Internal Server Error: /users/center/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 42, in get_template
+    return Template(self.env.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/templates/users/user_center_info.html", line 67, in template
+    <li><a href="{% url 'users:addresses' %}">· 收货地址</a></li>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'url'.
+
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
   File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 122, in __call__
-    response = self.process_response(request, response)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 346, in get
+    return render(request, "users/user_center_info.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
-    return self.response_redirect_class(self.get_full_path_with_slash(request))
-                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
-    raise RuntimeError(
-RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/oauth/qq/callback/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
-[2025-12-11 18:20:24,238] [ERROR] [django.request:253] Internal Server Error: /oauth/qq/callback
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 48, in get_template
+    raise new from exc
+django.template.exceptions.TemplateSyntaxError: ("Encountered unknown tag 'url'.",)
+[2025-12-20 22:19:35,110] [ERROR] [django.request:253] Internal Server Error: /users/center/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 42, in get_template
+    return Template(self.env.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/templates/users/user_center_info.html", line 67, in template
+    <li><a href="{% url 'users:addresses' %}">· 收货地址</a></li>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'url'.
+
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
   File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 122, in __call__
-    response = self.process_response(request, response)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 346, in get
+    return render(request, "users/user_center_info.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
-    return self.response_redirect_class(self.get_full_path_with_slash(request))
-                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
-    raise RuntimeError(
-RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/oauth/qq/callback/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 48, in get_template
+    raise new from exc
+django.template.exceptions.TemplateSyntaxError: ("Encountered unknown tag 'url'.",)
+[2025-12-20 22:23:07,703] [ERROR] [django.request:253] Internal Server Error: /users/addresses/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 42, in get_template
+    return Template(self.env.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/templates/users/user_center_site.html", line 1, in template
+    {% load static %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'load'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 506, in get
+    return render(request, 'users/user_center_site.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/template/backends/jinja2.py", line 48, in get_template
+    raise new from exc
+django.template.exceptions.TemplateSyntaxError: ("Encountered unknown tag 'load'.",)
+[2025-12-20 22:50:31,047] [ERROR] [django.request:253] Internal Server Error: /users/addresses/4/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '邯郸市'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 554, in put
+    Address.objects.filter(
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1263, in update
+    rows = query.get_compiler(self.db).execute_sql(ROW_COUNT)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 2060, in execute_sql
+    row_count = super().execute_sql(result_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1610, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/backends/mysql/compiler.py", line 49, in as_sql
+    update_query, update_params = super().as_sql()
+                                  ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 2023, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/fields/related.py", line 1190, in get_db_prep_save
+    return self.target_field.get_db_prep_save(value, connection=connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1012, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2820, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got '邯郸市'.
+[2025-12-20 22:50:32,569] [ERROR] [django.request:253] Internal Server Error: /users/addresses/4/
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2128, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '邯郸市'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/apps/users/views.py", line 554, in put
+    Address.objects.filter(
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1263, in update
+    rows = query.get_compiler(self.db).execute_sql(ROW_COUNT)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 2060, in execute_sql
+    row_count = super().execute_sql(result_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1610, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/backends/mysql/compiler.py", line 49, in as_sql
+    update_query, update_params = super().as_sql()
+                                  ^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 2023, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/fields/related.py", line 1190, in get_db_prep_save
+    return self.target_field.get_db_prep_save(value, connection=connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1012, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2820, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lijiahao/git-test/meiduo_test/meiduo_mall/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got '邯郸市'.

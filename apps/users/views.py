@@ -8,9 +8,6 @@ from django.urls import reverse
 from django.views import View
 from apps.users.models import User
 
-
-
-
 logger = logging.getLogger("django")
 
 
@@ -340,6 +337,329 @@ class UserCenterInfoView(LoginRequiredMixin, View):
     """
 
     def get(self, request):
-        return render(request, "users/user_center_info.html")
+        context = {
+            'username': request.user.username,
+            'mobile': request.user.mobile,
+            'email': request.user.email,
+            'email_active': request.user.email_active,
+        }
+        return render(request, "users/user_center_info.html", context)
 
 
+
+# ============================================================
+# 邮箱模块
+# ============================================================
+
+import json
+import re
+
+from django.views import View
+from django import http
+from django.contrib.auth.mixins import LoginRequiredMixin
+
+from utils.response_code import RETCODE
+from apps.users.utils import active_email_url
+from celery_tasks.email.tasks import send_active_email
+from utils.mixins import LoginRequiredJSONMixin
+
+
+class EmailView(LoginRequiredJSONMixin, View):
+    """
+    用户设置邮箱 + 发送激活邮件
+    PUT /users/emails/
+    """
+
+    def put(self, request):
+        # 1. 解析 JSON 数据
+        try:
+            data = json.loads(request.body.decode())
+        except Exception:
+            return http.JsonResponse({
+                "code": RETCODE.PARAMERR,
+                "errmsg": "参数格式错误"
+            })
+
+        email = data.get("email")
+
+        # 2. 校验 email
+        if not email:
+            return http.JsonResponse({
+                "code": RETCODE.PARAMERR,
+                "errmsg": "缺少 email"
+            })
+
+        if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
+            return http.JsonResponse({
+                "code": RETCODE.PARAMERR,
+                "errmsg": "邮箱格式错误"
+            })
+
+        # 3. 保存 email（未激活）
+        user = request.user
+        user.email = email
+        user.email_active = False
+        user.save()
+
+        # 4. 生成激活链接
+        verify_url = active_email_url(email, user.id)
+
+        # 5. Celery 异步发送邮件
+        send_active_email.delay(email, verify_url)
+
+        # 6. 返回成功
+        return http.JsonResponse({
+            "code": RETCODE.OK,
+            "errmsg": "OK"
+        })
+
+
+
+
+from django.shortcuts import redirect
+from django.urls import reverse
+from apps.users.utils import check_email_active_token
+
+class EmailActiveView(View):
+    """
+    邮箱激活回调
+    """
+
+    def get(self, request):
+        token = request.GET.get("token")
+        if not token:
+            return http.HttpResponseBadRequest("缺少 token")
+
+        # 校验 token
+        user = check_email_active_token(token)
+        if not user:
+            return http.HttpResponseBadRequest("无效或过期的激活链接")
+
+        # 激活邮箱
+        user.email_active = True
+        user.save()
+
+        # 跳转用户中心
+        return redirect(reverse("users:center"))
+
+# ============================================================
+# Address 视图
+# ============================================================
+import json
+import re
+import logging
+
+from django import http
+from django.views import View
+
+from utils.response_code import RETCODE
+from utils.mixins import LoginRequiredJSONMixin
+from apps.users.models import Address
+
+logger = logging.getLogger('django')
+
+
+# apps/users/views.py
+import json
+from django.shortcuts import render
+from django import http
+from django.views import View
+
+from utils.mixins import LoginRequiredJSONMixin
+from utils.response_code import RETCODE
+from .models import Address
+
+
+class AddressView(LoginRequiredMixin, View):
+    def get(self, request):
+        addresses = Address.objects.filter(
+            user=request.user,
+            is_deleted=False
+        )
+
+        address_list = []
+        for addr in addresses:
+            address_list.append({
+                'id': addr.id,
+                'title': addr.title,
+                'receiver': addr.receiver,
+                'province': addr.province.name,
+                'province_id': addr.province_id,
+                'city': addr.city.name,
+                'city_id': addr.city_id,
+                'district': addr.district.name,
+                'district_id': addr.district_id,
+                'place': addr.place,
+                'mobile': addr.mobile,
+                'tel': addr.tel,
+                'email': addr.email,
+            })
+
+        context = {
+            'addresses': address_list,
+            'default_address_id': request.user.default_address_id
+        }
+        return render(request, 'users/user_center_site.html', context)
+
+
+class AddressCreateView(LoginRequiredJSONMixin, View):
+    def post(self, request):
+        data = json.loads(request.body.decode())
+
+        try:
+            address = Address.objects.create(
+                user=request.user,
+                title=data.get('title'),
+                receiver=data.get('receiver'),
+                province_id=data.get('province_id'),
+                city_id=data.get('city_id'),
+                district_id=data.get('district_id'),
+                place=data.get('place'),
+                mobile=data.get('mobile'),
+                tel=data.get('tel'),
+                email=data.get('email'),
+            )
+        except Exception as e:
+            return http.JsonResponse({
+                'code': RETCODE.DBERR,
+                'errmsg': '保存失败'
+            })
+
+        if not request.user.default_address:
+            request.user.default_address = address
+            request.user.save()
+
+        return http.JsonResponse({
+            'code': RETCODE.OK,
+            'errmsg': 'ok',
+            'address': {
+                'id': address.id,
+                'title': address.title,
+                'receiver': address.receiver,
+                'province': address.province.name,
+                'city': address.city.name,
+                'district': address.district.name,
+                'place': address.place,
+                'mobile': address.mobile,
+                'tel': address.tel,
+                'email': address.email,
+            }
+        })
+
+# 更新/删除 地址
+class AddressUpdateView(LoginRequiredJSONMixin, View):
+
+    def put(self, request, address_id):
+        data = json.loads(request.body.decode())
+
+        try:
+            address = Address.objects.get(
+                id=address_id,
+                user=request.user,
+                is_deleted=False
+            )
+        except Address.DoesNotExist:
+            return http.JsonResponse({
+                'code': RETCODE.NODATAERR,
+                'errmsg': '地址不存在'
+            })
+
+        # ===== 手动字段映射（关键）=====
+        address.title = data.get('title', address.title)
+        address.receiver = data.get('receiver', address.receiver)
+        address.place = data.get('place', address.place)
+        address.mobile = data.get('mobile', address.mobile)
+        address.tel = data.get('tel', address.tel)
+        address.email = data.get('email', address.email)
+
+        # 外键要用 _id 赋值
+        address.province_id = data.get('province_id', address.province_id)
+        address.city_id = data.get('city_id', address.city_id)
+        address.district_id = data.get('district_id', address.district_id)
+
+        address.save()
+
+        # 返回给前端的数据（和新增保持一致）
+        return http.JsonResponse({
+            'code': RETCODE.OK,
+            'errmsg': 'ok',
+            'address': {
+                'id': address.id,
+                'title': address.title,
+                'receiver': address.receiver,
+                'province': address.province.name,
+                'city': address.city.name,
+                'district': address.district.name,
+                'province_id': address.province_id,
+                'city_id': address.city_id,
+                'district_id': address.district_id,
+                'place': address.place,
+                'mobile': address.mobile,
+                'tel': address.tel,
+                'email': address.email,
+            }
+
+        })
+
+    def delete(self, request, address_id):
+        """
+        删除地址（逻辑删除）
+        """
+        try:
+            address = Address.objects.get(
+                id=address_id,
+                user=request.user,
+                is_deleted=False
+            )
+        except Address.DoesNotExist:
+            return http.JsonResponse({
+                'code': RETCODE.NODATAERR,
+                'errmsg': '地址不存在'
+            })
+
+        address.is_deleted = True
+        address.save()
+
+        return http.JsonResponse({
+            'code': RETCODE.OK,
+            'errmsg': 'ok'
+        })
+
+# 设为默认地址
+class DefaultAddressView(LoginRequiredJSONMixin, View):
+
+    def put(self, request, address_id):
+        try:
+            address = Address.objects.get(
+                id=address_id,
+                user=request.user
+            )
+        except Address.DoesNotExist:
+            return http.JsonResponse({
+                'code': RETCODE.NODATAERR,
+                'errmsg': '地址不存在'
+            })
+
+        request.user.default_address = address
+        request.user.save()
+
+        return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok'})
+
+class AddressTitleView(LoginRequiredJSONMixin, View):
+
+    def put(self, request, address_id):
+        data = json.loads(request.body.decode())
+        title = data.get('title')
+
+        if not title:
+            return http.JsonResponse({
+                'code': RETCODE.PARAMERR,
+                'errmsg': '缺少 title'
+            })
+
+        Address.objects.filter(
+            id=address_id,
+            user=request.user
+        ).update(title=title)
+
+        return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok'})

@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'apps.users.apps.UsersConfig',
     "celery_tasks",
     "apps.oauth.apps.OauthConfig",
+    'apps.areas',
 ]
 
 MIDDLEWARE = [
@@ -135,7 +136,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "Asia/Shanghai"
 
 USE_I18N = True
 
@@ -291,8 +292,34 @@ LOGGING = {
 
 LOGIN_URL = "/users/login/"
 
+# -------- QQ 登录模块 ----------
 # QQ 登录相关（使用你自己在 QQ 互联申请的 appid / appkey / 回调地址）
 QQ_CLIENT_ID = '102822214'
 QQ_CLIENT_SECRET = 'teDaidIiuqY5OSGv'
 # 注意：回调地址要和 QQ 平台配置一致，否则会报 redirect_uri mismatch
 QQ_REDIRECT_URI = 'http://127.0.0.1:8000/oauth/qq/callback'
+
+
+# ================= 邮件配置 =================
+
+# 使用 SMTP 发送邮件
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+# SMTP 服务器
+EMAIL_HOST = "smtp.qq.com"
+
+# SSL 端口（QQ 邮箱必须用 465）
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+
+# 你的发件邮箱（QQ 邮箱）
+EMAIL_HOST_USER = "503197281@qq.com"
+
+# QQ 邮箱的「授权码」，不是登录密码！
+EMAIL_HOST_PASSWORD = "bifjwydnnsadcbah"
+
+# 发件人显示的地址（Celery 正在用的）
+EMAIL_FROM = EMAIL_HOST_USER
+
+# 邮箱激活回调地址
+EMAIL_VERIFY_URL = "http://127.0.0.1:8000/users/emails/verify/"
